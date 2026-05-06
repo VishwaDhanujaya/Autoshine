@@ -6,60 +6,112 @@
 */
 
 @media (max-width: 767px) {
+
     /* ── Global Mobile Fixes ── */
-    body.home { padding-top: 0 !important; }
-    .page-header { position: fixed !important; top: 0 !important; width: 100% !important; z-index: 9999 !important; }
-    
+    body.home {
+        padding-top: 0 !important;
+    }
+
+    .page-header {
+        position: fixed !important;
+        top: 0 !important;
+        width: 100% !important;
+        z-index: 9999 !important;
+    }
+
     /* Header row gap fix */
-    .page-header .header-row { 
-        padding: 10px 0 !important; 
-        min-height: 60px !important; 
+    .page-header .header-row {
+        padding: 10px 0 !important;
+        min-height: 60px !important;
         display: flex !important;
         align-items: center !important;
     }
-    
+
     /* Appointment button in header */
-    .appointment-btn { 
-        padding: 6px 12px !important; 
-        font-size: 11px !important; 
-        border: 1px solid rgba(255,255,255,0.1) !important;
-        margin: 0 !important;
+    .appointment-btn {
+        padding: 6px 12px !important;
+        font-size: 11px !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        margin: 0 10px 0 0 !important;
+        /* Right margin to shift left */
         width: auto !important;
+        transform: translateX(-5px) !important;
+        /* Explicit shift left */
     }
-    
+
     /* ── Hero Slider — flush to navbar, zero gap to promo below ── */
-    #hero-slider { margin: 0 !important; padding: 0 !important; height: 300px !important; }
-    body.home #pageContent, body.home .content-area { padding-top: 0 !important; margin-top: 0 !important; }
+    #hero-slider {
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 300px !important;
+    }
+
+    body.home #pageContent,
+    body.home .content-area {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
     #hero-slider .slide,
-    #hero-slider .img--holder { 
-        height: 300px !important; 
-        min-height: 300px !important; 
-        margin: 0 !important; 
+    #hero-slider .img--holder {
+        height: 300px !important;
+        min-height: 300px !important;
+        margin: 0 !important;
         top: 0 !important;
     }
-    #hero-slider .img--holder { background-size: cover !important; background-position: center !important; }
-    #hero-slider .slick-slider, #hero-slider .slick-list, #hero-slider .slick-track, #mainSliderWrapper { 
-        margin: 0 !important; padding: 0 !important; height: 300px !important; 
+
+    #hero-slider .img--holder {
+        background-size: cover !important;
+        background-position: center !important;
     }
-    
+
+    #hero-slider .slick-slider,
+    #hero-slider .slick-list,
+    #hero-slider .slick-track,
+    #mainSliderWrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 300px !important;
+    }
+
     /* Zero gap between slider and promo banner */
-    #promo-banner { margin-top: 0 !important; }
-    #promo-banner .block { padding-top: 0 !important; padding-bottom: 0 !important; }
-    
+    #promo-banner {
+        margin-top: 0 !important;
+    }
+
+    #promo-banner .block {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
     /* Slide Content Glassmorphism */
-    .slide-content .vert { 
-        padding: 10px !important; 
+    .slide-content .vert {
+        padding: 10px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
         height: 100% !important;
     }
-    .slide-content h3 { font-size: 28px !important; line-height: 1.15 !important; text-align: center !important; }
-    .slide-content h4 { font-size: 13px !important; text-align: center !important; }
-    .slide-content p { font-size: 14px !important; text-align: center !important; }
-    .slide-content .vert > .container {
-        padding: 25px 20px !important; 
-        max-width: 90% !important; 
+
+    .slide-content h3 {
+        font-size: 28px !important;
+        line-height: 1.15 !important;
+        text-align: center !important;
+    }
+
+    .slide-content h4 {
+        font-size: 13px !important;
+        text-align: center !important;
+    }
+
+    .slide-content p {
+        font-size: 14px !important;
+        text-align: center !important;
+    }
+
+    .slide-content .vert>.container {
+        padding: 25px 20px !important;
+        max-width: 90% !important;
         border-radius: 15px !important;
         margin-top: 0 !important;
         background: rgba(0, 0, 0, 0.45) !important;
@@ -71,35 +123,58 @@
         justify-content: center !important;
         text-align: center !important;
     }
-    .slide-content .btn { margin: 15px auto 0 !important; display: table !important; }
+
+    .slide-content .btn {
+        margin: 15px auto 0 !important;
+        display: table !important;
+    }
 
     /* ── Promo-01 Banner (After Hours Drop-Off) ── */
-    .promo-01 { padding: 18px 15px !important; }
-    .promo-01__col-right .btn { width: auto !important; }
+    .promo-01 {
+        padding: 18px 15px !important;
+    }
+
+    .promo-01__col-right .btn {
+        width: auto !important;
+    }
 
     /* ── What We Do (Home Only) — Minimalist Text Cards ── */
     body.home .services-block {
-        max-width: 100% !important; margin: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
         padding: 0 15px !important;
     }
+
     body.home .services-block .service {
-        width: 100% !important; float: none !important; margin-top: 15px !important;
-        display: block !important; border-radius: 15px !important; overflow: hidden !important;
-        position: relative !important; min-height: 0 !important;
+        width: 100% !important;
+        float: none !important;
+        margin-top: 15px !important;
+        display: block !important;
+        border-radius: 15px !important;
+        overflow: hidden !important;
+        position: relative !important;
+        min-height: 0 !important;
         background: #1a1a1a !important;
-        border: 1px solid rgba(255,255,255,0.05) !important;
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
         padding: 25px !important;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
         margin-bottom: 15px !important;
     }
-    body.home .services-block .image { display: none !important; }
-    
+
+    body.home .services-block .image {
+        display: none !important;
+    }
+
     body.home .services-block .caption,
     body.home .services-block .vert-wrap,
     body.home .services-block .vert {
-        position: relative !important; top: 0 !important; left: 0 !important;
-        width: 100% !important; height: auto !important;
-        padding: 0 !important; font-size: 14px !important;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        padding: 0 !important;
+        font-size: 14px !important;
         display: block !important;
         text-align: center !important;
         background: transparent !important;
@@ -108,22 +183,34 @@
         border: none !important;
         box-shadow: none !important;
     }
+
     body.home .services-block .caption h3 {
-        font-size: 18px !important; line-height: 1.2 !important;
-        color: #fede00 !important; margin: 0 0 10px !important;
-        text-transform: uppercase !important; font-weight: 700 !important;
+        font-size: 18px !important;
+        line-height: 1.2 !important;
+        color: #fede00 !important;
+        margin: 0 0 10px !important;
+        text-transform: uppercase !important;
+        font-weight: 700 !important;
         text-align: center !important;
     }
+
     body.home .services-block .caption .text {
-        font-size: 13px !important; line-height: 1.5 !important;
-        margin: 0 !important; color: #ccc !important; opacity: 1 !important;
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+        margin: 0 !important;
+        color: #ccc !important;
+        opacity: 1 !important;
         text-align: center !important;
     }
-    .services__text-background { display: none !important; }
-    body.home .services-block .services__text-background { 
-        display: block !important; 
+
+    .services__text-background {
+        display: none !important;
+    }
+
+    body.home .services-block .services__text-background {
+        display: block !important;
         font-size: 50px !important;
-        opacity: 0.05 !important; 
+        opacity: 0.05 !important;
         z-index: 1 !important;
         color: #fff !important;
         bottom: 0px !important;
@@ -131,50 +218,100 @@
         text-align: right !important;
         width: auto !important;
     }
-    body.home .services-block .service.hidden-xs { display: none !important; }
+
+    body.home .services-block .service.hidden-xs {
+        display: none !important;
+    }
 
     /* ── Services Page (Our Services) Fixes ── */
-    .services-block-alt { 
-        margin-bottom: 20px !important; 
-        background: #111 !important; 
-        border-radius: 12px !important; 
+    .services-block-alt {
+        margin-bottom: 20px !important;
+        background: #111 !important;
+        border-radius: 12px !important;
         overflow: hidden !important;
         padding: 0 !important;
-        border: 1px solid rgba(255,255,255,0.05) !important;
+        border: 1px solid rgba(255, 255, 255, 0.05) !important;
     }
-    .services-block-alt .image img { 
-        width: 100% !important; 
-        height: 140px !important; 
-        object-fit: cover !important; 
+
+    .services-block-alt .image img {
+        width: 100% !important;
+        height: 140px !important;
+        object-fit: cover !important;
     }
-    .services-block-alt .caption { padding: 15px !important; text-align: center !important; }
-    .services-block-alt .title { font-size: 15px !important; line-height: 1.3 !important; margin-bottom: 5px !important; }
-    .services-block-alt .text { font-size: 12px !important; line-height: 1.4 !important; opacity: 0.8 !important; }
-    .services-alt .col-xs-6 { padding: 5px !important; } /* Tighten grid */
+
+    .services-block-alt .caption {
+        padding: 15px !important;
+        text-align: center !important;
+    }
+
+    .services-block-alt .title {
+        font-size: 15px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 5px !important;
+    }
+
+    .services-block-alt .text {
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+        opacity: 0.8 !important;
+    }
+
+    .services-alt .col-xs-6 {
+        padding: 5px !important;
+    }
+
+    /* Tighten grid */
 
 
     /* ── How It Works — promo02 step cards ── */
     .promo02 .promo02__marker {
-        font-size: 120px !important; top: -12px !important;
-        left: -8px !important; width: 25% !important;
+        font-size: 120px !important;
+        top: -12px !important;
+        left: -8px !important;
+        width: 25% !important;
     }
-    .promo02 .promo02__content { width: 75% !important; }
-    .promo02 .promo02__img { height: 160px !important; }
-    .promo02 .promo02__img .promo02__title { font-size: 14px !important; line-height: 1.3 !important; }
+
+    .promo02 .promo02__content {
+        width: 75% !important;
+    }
+
+    .promo02 .promo02__img {
+        height: 160px !important;
+    }
+
+    .promo02 .promo02__img .promo02__title {
+        font-size: 14px !important;
+        line-height: 1.3 !important;
+    }
+
     .js-promo02-carousel.slick-initialized .promo02 {
-        width: calc(100vw - 40px) !important; max-width: 360px !important;
+        width: calc(100vw - 40px) !important;
+        max-width: 360px !important;
     }
 
     /* ── 100% Guarantee boxes ── */
-    .box01 { margin-bottom: 15px !important; }
+    .box01 {
+        margin-bottom: 15px !important;
+    }
 
     /* ── Why Choose Us cards ── */
-    .text-icon { padding: 25px 15px !important; margin-bottom: 12px !important; }
-    .text-icon .title { font-size: 18px !important; }
+    .text-icon {
+        padding: 25px 15px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .text-icon .title {
+        font-size: 18px !important;
+    }
 
     /* ── Statistics ── */
-    .stat-box02 { margin-bottom: 15px !important; }
-    .video-block { display: none !important; }
+    .stat-box02 {
+        margin-bottom: 15px !important;
+    }
+
+    .video-block {
+        display: none !important;
+    }
 
     /* ── Appointment CTA ── */
     .img-move {
@@ -183,12 +320,21 @@
         margin: 10px auto 0 !important;
         opacity: 0.85 !important;
     }
-    .img-move img { max-width: 100% !important; height: auto !important; }
-    .text-appointment h2.h-phone { font-size: 20px !important; }
+
+    .img-move img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .text-appointment h2.h-phone {
+        font-size: 20px !important;
+    }
 
     /* ── Content buttons ── */
     .block .btn-border:not(.appointment-btn) {
-        width: 100% !important; margin-bottom: 10px !important; border-radius: 8px !important;
+        width: 100% !important;
+        margin-bottom: 10px !important;
+        border-radius: 8px !important;
     }
 
     /* ── Mobile Menu Fixes ── */
@@ -196,13 +342,18 @@
         z-index: 100000 !important;
         background: #0a0a0a !important;
     }
-    .mm-fullscreen-bg { z-index: 99999 !important; }
+
+    .mm-fullscreen-bg {
+        z-index: 99999 !important;
+    }
+
     .mm-close-parent {
         background: #111 !important;
-        border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
         padding: 12px 20px !important;
         text-align: right !important;
     }
+
     .mm-close {
         color: #fede00 !important;
         font-size: 0 !important;
@@ -210,7 +361,11 @@
         text-decoration: none !important;
         line-height: 1 !important;
     }
-    .mm-close:before { content: none !important; }
+
+    .mm-close:before {
+        content: none !important;
+    }
+
     .mm-close:after {
         content: "\e930";
         font-family: 'auto' !important;
@@ -219,13 +374,18 @@
         visibility: visible !important;
         display: block !important;
     }
+
     .mmpanel li a {
         padding: 15px 20px !important;
-        border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
         color: #fff !important;
         font-weight: 500 !important;
     }
-    .mmpanel li a:hover, .mmpanel li a.mm-original-link { color: #fede00 !important; }
+
+    .mmpanel li a:hover,
+    .mmpanel li a.mm-original-link {
+        color: #fede00 !important;
+    }
 
     /* ── Page Title Wrapper (Internal Pages) ── */
     .page-title-wrapper {
@@ -236,17 +396,21 @@
         align-items: center !important;
         justify-content: center !important;
     }
+
     .page-title-wrapper h1 {
         font-size: 18px !important;
         margin: 0 !important;
         line-height: 1.2 !important;
         text-align: center !important;
     }
-    .page-title-wrapper .breadcrumbs { display: none !important; }
+
+    .page-title-wrapper .breadcrumbs {
+        display: none !important;
+    }
 
     /* ── Button Fixes (Packages & CTAs) ── */
     .btn-inline .btn-wide {
-        width: auto !important; 
+        width: auto !important;
         min-width: 180px !important;
         max-width: 250px !important;
         height: 50px !important;
@@ -257,34 +421,105 @@
         font-size: 16px !important;
         border-radius: 25px !important;
     }
-    .btn-inline .btn-wide span { line-height: 50px !important; }
-    .btn-inline { text-align: center !important; width: 100% !important; }
+
+    .btn-inline .btn-wide span {
+        line-height: 50px !important;
+    }
+
+    .btn-inline {
+        text-align: center !important;
+        width: 100% !important;
+    }
 
     /* ── Gallery & Packages Fixes ── */
-    .filters-by-category { margin-bottom: 15px !important; }
-    .filters-by-category ul li { margin-bottom: 8px !important; }
-    .filters-by-category ul li a { padding: 6px 12px !important; font-size: 12px !important; }
-    .gallery-col-4 .gallery-item, .gallery-col-3 .gallery-item { 
-        width: 48% !important; 
-        margin: 1% !important; 
-        padding: 0 !important; 
-        float: left !important;
+    .filters-by-category {
+        margin-bottom: 15px !important;
     }
-    .gallery { 
-        margin-top: 5px !important; 
-        width: 100% !important; 
-        padding: 0 5px !important; 
-        display: block !important;
+
+    .filters-by-category ul li {
+        margin-bottom: 8px !important;
     }
-    .gallery-item-image img { border-radius: 8px !important; width: 100% !important; height: auto !important; }
+
+    .filters-by-category ul li a {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+    }
+
+    /* ── Force Flexbox Centering & Override Isotope JS ── */
+    .gallery-isotope {
+        width: 100% !important;
+        padding: 0 15px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        /* Centers the items perfectly */
+        height: auto !important;
+        /* Overrides Isotope's fixed container height */
+    }
+
+    .gallery.gallery-isotope .gallery-item {
+        width: 100% !important;
+        max-width: 350px !important;
+        /* Keeps the image from getting too massive */
+        margin: 0 0 20px 0 !important;
+        /* Adds space only to the bottom */
+        padding: 0 !important;
+        float: none !important;
+        position: relative !important;
+        /* Kills Isotope's absolute positioning */
+        left: auto !important;
+        /* Overrides JS left math */
+        top: auto !important;
+        /* Overrides JS top math */
+    }
 
     /* ── Footer ── */
-    .footer-map-container { display: none !important; }
-    .footer-map-section { display: none !important; padding: 0 !important; margin: 0 !important; }
-    .map-overlay-container { display: none !important; }
-    .map-glass-card { display: none !important; }
+    .footer-map-container {
+        display: none !important;
+    }
+
+    .footer-map-section {
+        display: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .map-overlay-container {
+        display: none !important;
+    }
+
+    .map-glass-card {
+        display: none !important;
+    }
+
     .divider.visible-xs,
-    div.divider.visible-xs { display: none !important; height: 0 !important; margin: 0 !important; }
-    .page-footer { margin-bottom: 0 !important; }
-    .footer-bottom { padding-bottom: 0 !important; padding-top: 15px !important; }
+    div.divider.visible-xs {
+        display: none !important;
+        height: 0 !important;
+        margin: 0 !important;
+    }
+
+    .page-footer {
+        margin-bottom: 0 !important;
+    }
+
+    .footer-bottom {
+        padding-bottom: 0 !important;
+        padding-top: 15px !important;
+    }
+}
+
+/* ── Global Gallery Fixes (PC & Mobile) ── */
+.gallery-item-image img {
+    border-radius: 8px !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media (min-width: 992px) {
+    #gallery.gallery-isotope.gallery-col-4 .gallery-item {
+        width: calc(25% - 22.5px) !important;
+        /* Perfect 4-column math for 30px gutter */
+        margin-bottom: 30px !important;
+    }
 }

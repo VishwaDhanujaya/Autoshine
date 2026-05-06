@@ -9,7 +9,7 @@
 		
 			if ($('.datetimepicker').length) {
 				$('.datetimepicker').datetimepicker({
-					format: form_option.date_format,
+					format: (typeof form_option !== 'undefined' && form_option.date_format) ? form_option.date_format : 'YYYY-MM-DD',
 					icons: {
 						time: 'icon icon-clock',
 						date: 'icon icon-calendar',

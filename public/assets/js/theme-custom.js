@@ -674,9 +674,10 @@
                 $gallery.imagesLoaded(function() {
                     $gallery.isotope({
                         itemSelector: '.gallery-item',
+                        percentPosition: true,
                         masonry: {
                             columnWidth: '.gallery-item',
-                            gutter: 30
+                            gutter: (window.innerWidth < 768) ? 0 : 30
                         }
                     });
                 });

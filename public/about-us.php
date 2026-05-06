@@ -120,9 +120,9 @@ require_once '../includes/header.php';
                             <div class="card01__img">
                                 <img loading="lazy" alt="" decoding="async" src="assets/images/card01-img01.png"/>
                                 <ul class="card01__social-icon">
-                                    <li><a class="icon icon-59439" href="#" target="_blank"></a></li>
-                                    <li><a class="icon icon-8800" href="#" target="_blank"></a></li>
-                                    <li><a class="icon icon-733614" href="#" target="_blank"></a></li>
+                                    <li><a class="icon icon-59439" href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                                    <li><a class="icon icon-8800" href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                                    <li><a class="icon icon-733614" href="#" target="_blank" rel="noopener noreferrer"></a></li>
                                 </ul>
                             </div>
                             <div class="card01__wrapper">
@@ -137,9 +137,9 @@ require_once '../includes/header.php';
                             <div class="card01__img">
                                 <img loading="lazy" alt="" decoding="async" src="assets/images/card01-img02.png"/>
                                 <ul class="card01__social-icon">
-                                    <li><a class="icon icon-59439" href="#" target="_blank"></a></li>
-                                    <li><a class="icon icon-8800" href="#" target="_blank"></a></li>
-                                    <li><a class="icon icon-733614" href="#" target="_blank"></a></li>
+                                    <li><a class="icon icon-59439" href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                                    <li><a class="icon icon-8800" href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                                    <li><a class="icon icon-733614" href="#" target="_blank" rel="noopener noreferrer"></a></li>
                                 </ul>
                             </div>
                             <div class="card01__wrapper">
@@ -154,9 +154,9 @@ require_once '../includes/header.php';
                             <div class="card01__img">
                                 <img loading="lazy" alt="" decoding="async" src="assets/images/card01-img03.png"/>
                                 <ul class="card01__social-icon">
-                                    <li><a class="icon icon-59439" href="#" target="_blank"></a></li>
-                                    <li><a class="icon icon-8800" href="#" target="_blank"></a></li>
-                                    <li><a class="icon icon-733614" href="#" target="_blank"></a></li>
+                                    <li><a class="icon icon-59439" href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                                    <li><a class="icon icon-8800" href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                                    <li><a class="icon icon-733614" href="#" target="_blank" rel="noopener noreferrer"></a></li>
                                 </ul>
                             </div>
                             <div class="card01__wrapper">
@@ -171,9 +171,9 @@ require_once '../includes/header.php';
                             <div class="card01__img">
                                 <img loading="lazy" alt="" decoding="async" src="assets/images/card01-img04.png"/>
                                 <ul class="card01__social-icon">
-                                    <li><a class="icon icon-59439" href="#" target="_blank"></a></li>
-                                    <li><a class="icon icon-8800" href="#" target="_blank"></a></li>
-                                    <li><a class="icon icon-733614" href="#" target="_blank"></a></li>
+                                    <li><a class="icon icon-59439" href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                                    <li><a class="icon icon-8800" href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                                    <li><a class="icon icon-733614" href="#" target="_blank" rel="noopener noreferrer"></a></li>
                                 </ul>
                             </div>
                             <div class="card01__wrapper">
@@ -188,9 +188,9 @@ require_once '../includes/header.php';
                             <div class="card01__img">
                                 <img loading="lazy" alt="" decoding="async" src="assets/images/card01-img05.png"/>
                                 <ul class="card01__social-icon">
-                                    <li><a class="icon icon-59439" href="#" target="_blank"></a></li>
-                                    <li><a class="icon icon-8800" href="#" target="_blank"></a></li>
-                                    <li><a class="icon icon-733614" href="#" target="_blank"></a></li>
+                                    <li><a class="icon icon-59439" href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                                    <li><a class="icon icon-8800" href="#" target="_blank" rel="noopener noreferrer"></a></li>
+                                    <li><a class="icon icon-733614" href="#" target="_blank" rel="noopener noreferrer"></a></li>
                                 </ul>
                             </div>
                             <div class="card01__wrapper">
