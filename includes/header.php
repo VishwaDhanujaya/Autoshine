@@ -4,6 +4,23 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link href="assets/images/Auto-Shine-logo.png" rel="shortcut icon" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/Auto-Shine-logo.png">
+    
+    <!-- SEO & Social Media -->
+    <meta name="author" content="Autoshine Pvt Ltd">
+    <link rel="canonical" href="https://autoshine.lk<?php echo $_SERVER['REQUEST_URI']; ?>">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Autoshine">
+    <meta property="og:url" content="https://autoshine.lk<?php echo $_SERVER['REQUEST_URI']; ?>">
+    <meta property="og:title" content="<?php echo isset($page_title) ? $page_title . " | Autoshine" : "Autoshine – Vehicle Repair & Maintenance Services"; ?>">
+    <meta property="og:description" content="<?php echo isset($page_description) ? $page_description : 'Autoshine provides professional vehicle repair, mechanical repairs, auto detailing, and maintenance services in Nugegoda, Sri Lanka.'; ?>">
+    <meta property="og:image" content="https://autoshine.lk/assets/images/slide1.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo isset($page_title) ? $page_title . " | Autoshine" : "Autoshine – Vehicle Repair & Maintenance Services"; ?>">
+    <meta name="twitter:description" content="<?php echo isset($page_description) ? $page_description : 'Autoshine provides professional vehicle repair, mechanical repairs, auto detailing, and maintenance services in Nugegoda, Sri Lanka.'; ?>">
+    <meta name="twitter:image" content="https://autoshine.lk/assets/images/slide1.jpg">
     
     <title><?php echo isset($page_title) ? $page_title . " | Autoshine" : "Autoshine – Vehicle Repair & Maintenance Services"; ?></title>
     <meta name="description" content="<?php echo isset($page_description) ? $page_description : 'Autoshine provides professional vehicle repair, mechanical repairs, auto detailing, and maintenance services in Nugegoda, Sri Lanka.'; ?>">

@@ -63,20 +63,17 @@ require_once '../includes/header.php'; ?>
                 </div>
                 <div class="promo-01__col-center">
                     <div class="promo-01__description">We realize that you lead a busy life, so we have made it easy for you to drop off your vehicle 24/7.</div>
-                    <div class="promo-01__img"><img alt="" decoding="async" src="assets/images/banner-key-new.png"/></div>
+                    <div class="promo-01__img"><img alt="Autoshine After Hours Key Drop-off" decoding="async" src="assets/images/banner-key-new.png"/></div>
                 </div>
                 <div class="promo-01__col-right">
-                    <a class="btn btn-border anchoring-link" href="#c75"><span>Contact Now</span></a>
+                    <a class="btn btn-border anchoring-link" href="#appointment-cta"><span>Contact Now</span></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Hidden SEO h1 (not visible) -->
-<section class="reveal-effect hide">
-    <h1>Autoshine</h1>
-</section>
+
 
 <!-- What We Do — Service Image Panels -->
 <section class="reveal-effect" id="what-we-do">
@@ -90,7 +87,7 @@ require_once '../includes/header.php'; ?>
             <div class="services-block">
 
                 <div class="service">
-                    <div class="image"><img loading="lazy" alt="Image" decoding="async" src="assets/images/service-1-bg.png"/></div>
+                    <div class="image"><img loading="lazy" alt="Vehicle Maintenance Service" decoding="async" src="assets/images/service-1-bg.png"/></div>
                     <div class="caption">
                         <div class="services__text-background text-color-01">Maintenance</div>
                         <div class="vert-wrap"><div class="vert">
@@ -102,12 +99,12 @@ require_once '../includes/header.php'; ?>
 
                 <div class="service hidden-xs">
                     <a class="image image-scale" href="service-preventative-maintenance.php">
-                        <img loading="lazy" alt="Image" decoding="async" src="assets/images/service-2-bg.jpg"/>
+                        <img loading="lazy" alt="Car Maintenance Workshop" decoding="async" src="assets/images/service-2-bg.jpg"/>
                     </a>
                 </div>
 
                 <div class="service">
-                    <div class="image"><img loading="lazy" alt="Image" decoding="async" src="assets/images/service-3-bg.jpg"/></div>
+                    <div class="image"><img loading="lazy" alt="Common Car Repairs" decoding="async" src="assets/images/service-3-bg.jpg"/></div>
                     <div class="caption">
                         <div class="services__text-background text-color-02">Common</div>
                         <div class="vert-wrap"><div class="vert">
@@ -119,12 +116,12 @@ require_once '../includes/header.php'; ?>
 
                 <div class="service hidden-xs">
                     <a class="image image-scale" href="service-brake-repair.php">
-                        <img loading="lazy" alt="Image" decoding="async" src="assets/images/service-6-bg.jpg"/>
+                        <img loading="lazy" alt="Brake Repair Service" decoding="async" src="assets/images/service-6-bg.jpg"/>
                     </a>
                 </div>
 
                 <div class="service dark">
-                    <div class="image"><img loading="lazy" alt="Image" decoding="async" src="assets/images/service-5-bg.jpg"/></div>
+                    <div class="image"><img loading="lazy" alt="Brake Service & Repair" decoding="async" src="assets/images/service-5-bg.jpg"/></div>
                     <div class="caption">
                         <div class="services__text-background text-color-03">Brake</div>
                         <div class="vert-wrap"><div class="vert">
@@ -136,7 +133,7 @@ require_once '../includes/header.php'; ?>
 
                 <div class="service hidden-xs">
                     <a class="image image-scale" href="service-transmission.php">
-                        <img loading="lazy" alt="Image" decoding="async" src="assets/images/service-6-bg_1.jpg"/>
+                        <img loading="lazy" alt="Transmission Repair" decoding="async" src="assets/images/service-6-bg_1.jpg"/>
                     </a>
                 </div>
 
@@ -399,14 +396,14 @@ require_once '../includes/header.php'; ?>
 
                 <div class="col-lg-6">
                     <div class="video-block">
-                        <a class="video-block__icon js-popup" href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&amp;hl=en&amp;t=v&amp;hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom">
+                        <a class="video-block__icon" href="#">
                             <span class="icon">
                                 <svg id="Capa_1" style="enable-background:new 0 0 191.255 191.255;" version="1.1" viewbox="0 0 191.255 191.255" x="0px" xml:space="preserve" y="0px">
                                     <path d="M162.929,66.612c-2.814-1.754-6.514-0.896-8.267,1.917s-0.895,6.513,1.917,8.266c6.544,4.081,10.45,11.121,10.45,18.833s-3.906,14.752-10.45,18.833l-98.417,61.365c-6.943,4.329-15.359,4.542-22.512,0.573c-7.154-3.97-11.425-11.225-11.425-19.406V34.262c0-8.181,4.271-15.436,11.425-19.406c7.153-3.969,15.569-3.756,22.512,0.573l57.292,35.723c2.813,1.752,6.513,0.895,8.267-1.917c1.753-2.812,0.895-6.513-1.917-8.266L64.512,5.247c-10.696-6.669-23.661-7-34.685-0.883C18.806,10.48,12.226,21.657,12.226,34.262v122.73c0,12.605,6.58,23.782,17.602,29.898c5.25,2.913,10.939,4.364,16.616,4.364c6.241,0,12.467-1.754,18.068-5.247l98.417-61.365c10.082-6.287,16.101-17.133,16.101-29.015S173.011,72.899,162.929,66.612z"></path>
                                 </svg>
                             </span>
                         </a>
-                        <img loading="lazy" alt="" decoding="async" src="assets/images/video-img-01.jpg"/>
+                        <img loading="lazy" alt="Autoshine Workshop Video" decoding="async" src="assets/images/video-img-01.jpg"/>
                     </div>
                 </div>
 
@@ -472,7 +469,7 @@ require_once '../includes/header.php'; ?>
                     <div class="text-appointment">
                         <h2 class="h-lg">Schedule <span class="color">Your Appointment</span> Today</h2>
                         <p class="info">Your Automotive Repair &amp; Maintenance Service Specialist</p>
-                        <h2 class="h-phone">0115-548-648 / 0702-211-022</h2>
+                        <h2 class="h-phone">011-554-8648 / 070-221-1022</h2>
                         <div>
                             <a class="btn btn-border btn-invert" data-target="#appointmentForm" data-toggle="modal" href="#"><span>Appointment</span></a>
                         </div>
@@ -480,7 +477,7 @@ require_once '../includes/header.php'; ?>
                 </div>
                 <div class="col-md-6">
                     <div class="img-move animation animated fadeInRight" data-animation="fadeInRight" data-animation-delay="0s">
-                        <img loading="lazy" alt="" decoding="async" src="assets/images/img-car-move.png"/>
+                        <img loading="lazy" alt="Schedule Autoshine Appointment" decoding="async" src="assets/images/img-car-move.png"/>
                     </div>
                 </div>
             </div>

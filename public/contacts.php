@@ -11,24 +11,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['your-name'])) {
     $name    = filter_input(INPUT_POST, 'your-name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $email   = filter_input(INPUT_POST, 'your-email', FILTER_SANITIZE_EMAIL);
     $message = filter_input(INPUT_POST, 'your-message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $honeypot = $_POST['website_hp'];
     
-    if (empty($name) || empty($email) || empty($message)) {
+    if (!empty($honeypot)) {
+        $status_message = "Spam detected.";
+        $status_type = "error";
+    } elseif (empty($name) || empty($email) || empty($message)) {
         $status_message = "Please fill in all fields.";
         $status_type = "error";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $status_message = "Invalid email format.";
         $status_type = "error";
     } else {
-        $to = "autoshine88@gmail.com";
-        $subject = "New Contact Form Inquiry from $name";
-        $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
-        $headers = "From: webmaster@autoshine.lk\r\n" . "Reply-To: $email";
+        require_once '../includes/mail-config.php';
+        
+        try {
+            $mail = getPHPMailerInstance();
+            
+            // Recipients
+            $mail->addAddress('geminiuser677@gmail.com');
+            $mail->addReplyTo($email, $name);
 
-        if (mail($to, $subject, $body, $headers)) {
+            // Content
+            $mail->isHTML(false);
+            $mail->Subject = "New Contact Form Inquiry from $name";
+            $mail->Body    = "Name: $name\nEmail: $email\n\nMessage:\n$message";
+
+            $mail->send();
             $status_message = "Your message has been sent successfully!";
             $status_type = "success";
-        } else {
-            $status_message = "Oops! Something went wrong, please try again later.";
+        } catch (Exception $e) {
+            $status_message = "Oops! Something went wrong. Error: {$mail->ErrorInfo}";
             $status_type = "error";
         }
     }
@@ -66,7 +79,7 @@ require_once '../includes/header.php';
                             <div class="info02">
                                 <div class="info02__icon"><span class="icon-phone"></span></div>
                                 <h6 class="info02__title">Contact Phone</h6>
-                                <address>0115-548-648 / 0702-211-022</address>
+                                <address>011-554-8648 / 070-221-1022</address>
                             </div>
                             <div class="info02">
                                 <div class="info02__icon"><span class="icon-email"></span></div>
@@ -101,7 +114,11 @@ require_once '../includes/header.php';
                                 </div>
                             <?php endif; ?>
 
-                            <form action="contacts.php" class="contact-form" method="post">
+                            <form action="contacts.php" id="contact-form-element" class="contact-form" method="post">
+                                <!-- Honeypot -->
+                                <div style="display:none;">
+                                    <input type="text" name="website_hp" value="">
+                                </div>
                                 <div class="contact-form form-default">
                                     <div class="row">
                                         <div class="col-md-6">

@@ -10,21 +10,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['appt-submit'])) {
     $year    = filter_input(INPUT_POST, 'car-year', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $date    = filter_input(INPUT_POST, 'date', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $time    = filter_input(INPUT_POST, 'time', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $honeypot = $_POST['website_hp'];
     
-    if (empty($name) || empty($phone) || empty($email) || empty($date)) {
+    if (!empty($honeypot)) {
+        // Likely a bot
+        $appt_status_message = "Spam detected.";
+        $appt_status_type = "error";
+    } elseif (empty($name) || empty($phone) || empty($email) || empty($date)) {
         $appt_status_message = "Please fill in all required fields.";
         $appt_status_type = "error";
     } else {
-        $to = "autoshine88@gmail.com";
-        $subject = "New Appointment Request from $name";
-        $body = "Name: $name\nPhone: $phone\nEmail: $email\nVehicle: $car ($year)\nRequested Date: $date\nTime: $time";
-        $headers = "From: webmaster@autoshine.lk\r\n" . "Reply-To: $email";
+        require_once __DIR__ . '/mail-config.php';
+        
+        try {
+            $mail = getPHPMailerInstance();
+            
+            // Recipients
+            $mail->addAddress('geminiuser677@gmail.com');
+            $mail->addReplyTo($email, $name);
 
-        if (mail($to, $subject, $body, $headers)) {
+            // Content
+            $mail->isHTML(false);
+            $mail->Subject = "New Appointment Request from $name";
+            $mail->Body    = "Name: $name\nPhone: $phone\nEmail: $email\nVehicle: $car ($year)\nRequested Date: $date\nTime: $time";
+
+            $mail->send();
             $appt_status_message = "Appointment request sent successfully!";
             $appt_status_type = "success";
-        } else {
-            $appt_status_message = "Failed to send request. Please call us directly.";
+        } catch (Exception $e) {
+            $appt_status_message = "Failed to send request. Error: {$mail->ErrorInfo}";
             $appt_status_type = "error";
         }
     }

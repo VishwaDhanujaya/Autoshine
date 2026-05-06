@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://autoshine.lk/index.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://autoshine.lk/about-us.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://autoshine.lk/services.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://autoshine.lk/gallery.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://autoshine.lk/contacts.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://autoshine.lk/packages.php</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.70</priority>
+  </url>
+</urlset>

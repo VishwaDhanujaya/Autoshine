@@ -562,28 +562,7 @@
             })
         }
 
-        function PrintElem(elem) {
-            var mywindow = window.open('', 'PRINT', 'height=400,width=550');
-            mywindow.document.write('<html><head>');
-            mywindow.document.write('<style type="text/css">');
-            mywindow.document.write('.coupon-print{padding:7px;margin-top:35px;position:relative;font-size:16px;line-height:20px;}');
-            mywindow.document.write('.coupon-print {border: 1px dashed #000;padding:15px;}');
-            mywindow.document.write('.coupon-print-inside {border: 1px solid #fede00;padding:20px;}');
-            mywindow.document.write('.coupon-print-row-top, .coupon-print-row-bot {display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: -ms-flexbox;display: flex;-webkit-align-items: center;-ms-flex-align: center;align-items: center;width: 100%;-webkit-justify-content: space-between;-ms-flex-pack: justify;justify-content: space-between;}');
-            mywindow.document.write('.coupon-print-row-top {padding: 0 0 20px;}');
-            mywindow.document.write('.coupon-print-row-bot {padding: 10px 0 0;}');
-            mywindow.document.write('.coupon-print-col-left {float: left;width: 55%;}');
-            mywindow.document.write('.coupon-print-col-right {float: right;width: 42%;text-align: right;}');
-            mywindow.document.write('</style>');
-            mywindow.document.write('</head><body>');
-            mywindow.document.write(document.getElementById(elem).innerHTML);
-            mywindow.document.write('</body></html>');
-            mywindow.document.close(); // necessary for IE >= 10
-            mywindow.focus(); // necessary for IE >= 10*/
-            mywindow.print();
-            mywindow.close();
-            return true;
-        }
+
         // main slider
         $(window).load(function() {
         // $(document).ready(function() {
@@ -714,6 +693,17 @@
                 }]
             });
         }
+        
+        // Generic Slick Initialization for .js-slick-init
+        if (plugins.jsSlickInit.length) {
+            plugins.jsSlickInit.each(function() {
+                var $this = $(this);
+                if (!$this.hasClass('slick-initialized')) {
+                    var config = $this.data('slick') || {};
+                    $this.slick(config);
+                }
+            });
+        }
 
 
         if (plugins.jsPricingCarousel.length) {
@@ -743,7 +733,7 @@
         }
 
         /// for coupon popup
-        $('.print-link').on('click', function() {
+        $(document).on('click', '.print-link', function() {
             var post_id = $(this).attr('data-id');
             var popupLoder = $('#popUpLoader_' + post_id);
             popupLoder.addClass('visible');
@@ -1779,36 +1769,7 @@ if (plugins.galleryMoreLink.length) {
     })
 
 
-    $('.print-ele-link').on('click', function() {
-        let htm = $(this).closest('.promo01').clone()
-        let couponModal = $('#couponForm')
-        couponModal.find('.modal-body').html(htm)
-        couponModal.find('.print-ele-link').replaceWith('')
-        couponModal.modal('show');
 
-    })
-
-    $(document).on('click', '#btn_save_and_close_for_ele', function() {
-
-        PrintElementor()
-    })
-
-    function PrintElementor() {
-        var mywindow = window.open('', 'PRINT', 'height=400,width=550');
-        mywindow.document.write('<html><head>');
-        mywindow.document.write('<style type="text/css">');
-        mywindow.document.write('.promo01.colors-cheme-02 .promo01-content .text-02 {color: #5e5e5e;}.promo01.colors-cheme-02 .promo01-content .text-01 {color: #3a3a3a;}.promo01{display:block;position:relative;overflow:hidden;user-select:none}.promo01.colors-cheme-02 .promo01-header{background-color:#fff; -webkit-print-color-adjust: exact;}.promo01 .promo01-header{background-color:#ffc513; -webkit-print-color-adjust: exact;text-align:center;padding:22px 15px 31px}.promo01 .promo01-header .text-01{font-size:16px;line-height:26px}.promo01 .promo01-header .text-02{font-size:60px;line-height:51px;color:#ff4200;font-weight:700;font-family:Poppins,sans-serif;margin-top:7px;letter-spacing:-.04em}.promo01 .promo01-header .text-02 span{font-size:40px}.promo01 .promo01-header .text-03{font-size:29px;line-height:28px;font-family:Poppins,sans-serif;font-weight:600}.promo01 .promo01-content{ border-top: 3px dashed #fff;position:relative;text-align:center;-webkit-print-color-adjust: exact;background:#2d2d2d ;padding:46px 20px 46px}.promo01.colors-cheme-02 .promo01-content { border-top: 3px dashed #000;background: #ffffff ;}.promo01 .promo01-content .icon-separator{position:absolute;top:-16px;left:22px;fill:#fff}.promo01 .promo01-content .text-01{font-size:27px;line-height:28px;color:#fff;font-family:Poppins,sans-serif;font-weight:600}.promo01 .promo01-content .text-02{font-size:16px;line-height:20px;color:#fede00;margin-top:8px}.btn:not([data-action]){padding:17px 34px;min-width:inherit;text-transform:inherit;font-size:16px!important;font-weight:500}.btn.btn-border{border-color:#2c2c2c}.btn:not([data-action]).btn-border{border:2px solid #fede00;background:0 0!important}.btn:not([data-action]).btn-border{border-width:1px}.promo01 .promo01-content .btn:not([data-action]){margin-top:17px;padding-left:23px;padding-right:23px}.btn span{display:block;position:relative;z-index:1}@media print {.promo01.colors-cheme-02 .promo01-content .text-02 {color: #5e5e5e;}.promo01.colors-cheme-02 .promo01-content .text-01 {color: #3a3a3a;}.promo01{display:block;position:relative;overflow:hidden;user-select:none}.promo01.colors-cheme-02 .promo01-header{background-color:#fff; -webkit-print-color-adjust: exact;}.promo01 .promo01-header{background-color:#ffc513; -webkit-print-color-adjust: exact;text-align:center;padding:22px 15px 31px}.promo01 .promo01-header .text-01{font-size:16px;line-height:26px}.promo01 .promo01-header .text-02{font-size:60px;line-height:51px;color:#ff4200;font-weight:700;font-family:Poppins,sans-serif;margin-top:7px;letter-spacing:-.04em}.promo01 .promo01-header .text-02 span{font-size:40px}.promo01 .promo01-header .text-03{font-size:29px;line-height:28px;font-family:Poppins,sans-serif;font-weight:600}.promo01 .promo01-content{ border-top: 3px dashed #fff;position:relative;text-align:center;background:#2d2d2d ;-webkit-print-color-adjust: exact;padding:46px 20px 46px}.promo01.colors-cheme-02 .promo01-content { border-top: 3px dashed #000;background: #ffffff ; -webkit-print-color-adjust: exact;}.promo01 .promo01-content .icon-separator{position:absolute;top:-16px;left:22px;fill:#fff}.promo01 .promo01-content .text-01{font-size:27px;line-height:28px;color:#fff;font-family:Poppins,sans-serif;font-weight:600}.promo01 .promo01-content .text-02{font-size:16px;line-height:20px;color:#fede00;margin-top:8px}.btn:not([data-action]){padding:17px 34px;min-width:inherit;text-transform:inherit;font-size:16px!important;font-weight:500}.btn.btn-border{border-color:#2c2c2c}.btn:not([data-action]).btn-border{border:2px solid #fede00;background:0 0!important}.btn:not([data-action]).btn-border{border-width:1px}.promo01 .promo01-content .btn:not([data-action]){margin-top:17px;padding-left:23px;padding-right:23px}.btn span{display:block;position:relative;z-index:1}}');
-        mywindow.document.write('</style>');
-        mywindow.document.write('</head><body>');
-        mywindow.document.write(document.querySelector('#couponForm .promo01').outerHTML);
-        mywindow.document.write('</body></html>');
-        mywindow.document.close(); // necessary for IE >= 10
-        mywindow.focus(); // necessary for IE >= 10*/
-        mywindow.print();
-        setTimeout(function() { mywindow.close(); }, 300);
-
-        return true;
-    }
 
 
 

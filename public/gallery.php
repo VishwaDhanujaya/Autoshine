@@ -47,56 +47,56 @@ require_once '../includes/header.php';
 <input id="ga_total_tes" type="hidden" value="15 "/>
 <div class="gallery-item vehicle-repair">
 <div class="gallery-item-image">
-<img loading="lazy" alt="" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" fetchpriority="high" height="374" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/cr.jpg" srcset="assets/images/cr.jpg 600w, assets/images/cr-300x187.jpg 300w" width="600"> <a class="hover" href="assets/images/cr.jpg">
+<img loading="lazy" alt="Autoshine Workshop View" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" fetchpriority="high" height="374" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/cr.jpg" srcset="assets/images/cr.jpg 600w, assets/images/cr-300x187.jpg 300w" width="600"> <a class="hover" href="assets/images/cr.jpg">
 <span class="view"></span>
 </a>
 </img></div>
 </div>
 <div class="gallery-item vehicle-repair">
 <div class="gallery-item-image">
-<img loading="lazy" alt="" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/ky.jpg" srcset="assets/images/ky.jpg 600w, assets/images/ky-300x187.jpg 300w" width="600"> <a class="hover" href="assets/images/ky.jpg">
+<img loading="lazy" alt="Engine Maintenance Service" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/ky.jpg" srcset="assets/images/ky.jpg 600w, assets/images/ky-300x187.jpg 300w" width="600"> <a class="hover" href="assets/images/ky.jpg">
 <span class="view"></span>
 </a>
 </img></div>
 </div>
 <div class="gallery-item vehicle-repair">
 <div class="gallery-item-image">
-<img loading="lazy" alt="" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/277747054_5570094839686000_4413823307875611218_n.jpg" srcset="assets/images/277747054_5570094839686000_4413823307875611218_n.jpg 600w, assets/images/277747054_5570094839686000_4413823307875611218_n-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/277747054_5570094839686000_4413823307875611218_n.jpg">
+<img loading="lazy" alt="Vehicle Repair Work" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/277747054_5570094839686000_4413823307875611218_n.jpg" srcset="assets/images/277747054_5570094839686000_4413823307875611218_n.jpg 600w, assets/images/277747054_5570094839686000_4413823307875611218_n-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/277747054_5570094839686000_4413823307875611218_n.jpg">
 <span class="view"></span>
 </a>
 </div>
 </div>
 <div class="gallery-item vehicle-repair">
 <div class="gallery-item-image">
-<img alt="" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/Ford-Ranger.jpg" srcset="assets/images/Ford-Ranger.jpg 600w, assets/images/Ford-Ranger-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/Ford-Ranger.jpg">
+<img alt="Ford Ranger Repair" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/Ford-Ranger.jpg" srcset="assets/images/Ford-Ranger.jpg 600w, assets/images/Ford-Ranger-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/Ford-Ranger.jpg">
 <span class="view"></span>
 </a>
 </div>
 </div>
 <div class="gallery-item vehicle-repair">
 <div class="gallery-item-image">
-<img alt="" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/car.jpg" srcset="assets/images/car.jpg 600w, assets/images/car-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/car.jpg">
+<img alt="Car Body Work" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/car.jpg" srcset="assets/images/car.jpg 600w, assets/images/car-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/car.jpg">
 <span class="view"></span>
 </a>
 </div>
 </div>
 <div class="gallery-item vehicle-repair">
 <div class="gallery-item-image">
-<img alt="" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/jeep.jpg" srcset="assets/images/jeep.jpg 600w, assets/images/jeep-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/jeep.jpg">
+<img alt="Jeep Repair & Maintenance" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/jeep.jpg" srcset="assets/images/jeep.jpg 600w, assets/images/jeep-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/jeep.jpg">
 <span class="view"></span>
 </a>
 </div>
 </div>
 <div class="gallery-item vehicle-repair">
 <div class="gallery-item-image">
-<img alt="" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/Truck.jpg" srcset="assets/images/Truck.jpg 600w, assets/images/Truck-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/Truck.jpg">
+<img alt="Truck Mechanical Repair" class="attachment-car_repair_service_gallery-thumbnail size-car_repair_service_gallery-thumbnail wp-post-image" decoding="async" height="374" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/Truck.jpg" srcset="assets/images/Truck.jpg 600w, assets/images/Truck-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/Truck.jpg">
 <span class="view"></span>
 </a>
 </div>
 </div>
 <div class="gallery-item vehicle-repair">
 <div class="gallery-item-image">
-<img alt="" class="attachment-full size-full" decoding="async" height="374" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/toyata-dolpin.jpg" srcset="assets/images/toyata-dolpin.jpg 600w, assets/images/toyata-dolpin-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/toyata-dolpin.jpg">
+<img alt="Toyota Dolphin Van Repair" class="attachment-full size-full" decoding="async" height="374" loading="lazy" sizes="(max-width: 600px) 100vw, 600px" src="assets/images/toyata-dolpin.jpg" srcset="assets/images/toyata-dolpin.jpg 600w, assets/images/toyata-dolpin-300x187.jpg 300w" width="600"/> <a class="hover" href="assets/images/toyata-dolpin.jpg">
 <span class="view"></span>
 </a>
 </div>
