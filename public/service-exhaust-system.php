@@ -1,0 +1,92 @@
+<?php
+$body_class = "service-page elementor-page";
+$page_title = "Exhaust System Repair";
+$page_description = "Quality exhaust system and muffler repair services for better fuel efficiency and lower emissions.";
+require_once '../includes/header.php';
+?>
+<?php require_once '../includes/navbar.php'; ?>
+
+<!-- Page Title Bar -->
+<div class="page-title-wrapper" id="pageTitle">
+    <div class="container">
+        <h1>Exhaust System</h1>
+        
+    </div>
+</div>
+
+<div class="content-area" id="pageContent">
+<div id="primary">
+    <div class="block">
+        <div class="container">
+            <div class="row service-single">
+
+                <!-- Sidebar (reserved for future navigation) -->
+                <div class="col-lg-3 col-md-4">
+                    <?php include_once '../includes/sidebar-services.php'; ?>
+                </div>
+
+                <div class="divider-lg hidden-lg hidden-md hidden-sm"></div>
+
+                <!-- Main service content -->
+                <div class="col-lg-9 col-md-8">
+                    <img decoding="async" loading="lazy" alt="Service" class="img-responsive" src="assets/images/services-item-img01.jpg"/>
+                    <div class="divider-md"></div>
+                    <h2>Exhaust System</h2>
+
+                    <div class="service-content">
+
+<p>An oil change can really change your mood. And it will definitely change your oil. One of the simplest, most effective and inexpensive ways to help protect the life of your car, especially its engine, is to change the oil and the oil filter regularly.</p>
+<p>Oil is the lifeblood of your engine. It reduces friction, lessens wear, provides lubrication, forms a seal between the pistons, rings and cylinder walls while helping to cool engine parts.</p>
+<p>With a Car Repair Service oil change, or any other service, you'll receive a Touch® Courtesy Check. We'll look inside, outside, under the hood and underneath the car.</p>
+<ul class="marker-list-sm">
+    <li>Engine air filter</li>
+    <li>Brake fluid</li>
+    <li>Power steering fluid</li>
+    <li>Automatic transmission fluid</li>
+    <li>Coolant/antifreeze</li>
+</ul>
+
+                    </div>
+
+                    <!-- Image + trust copy -->
+                    <div class="row content-top">
+                        <div class="col-md-6">
+                            <img decoding="async" loading="lazy" alt="" class="img-responsive" src="assets/images/services-item-img02.jpg"/>
+                        </div>
+                        <div class="col-md-6">
+                            
+                            <h3>Trust Our Products</h3>
+                            <p>For over 60 years, Car Repair Service has been helping drivers across North America maintain their vehicles. With ASE-certified mechanics in all of our stores, we can take care of all of your auto repair and maintenance needs.</p>
+                            <p>From oil changes, filter replacements, and fluid flushes to brakes and brake repair, shocks and struts, muffler repair, tires, and wheel alignment, we've got you covered.</p>
+                        </div>
+                    </div>
+
+                    <p class="content-top-lg">Oil is the lifeblood of your engine. It reduces friction, lessens wear, provides lubrication, forms a seal between the pistons, rings and cylinder walls while helping to cool engine parts. Without the cleaning action of new oil, carbon and varnish buildup would be toxic to the engine. And engine oil even dampens the shock and noise of moving parts.</p>
+
+                    <!-- CTA: Appointment + Coupon -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="text-icon-sm" data-target="#appointmentForm" data-toggle="modal" href="#">
+                                <div class="icon-wrapper"><span><i class="icon icon-calendar"></i><span class="icon-hover"></span></span></div>
+                                <h4 class="title">Appointments</h4>
+                                <p>Perform a search to find a store near you that accepts online appointment requests</p>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="text-icon-sm" href="packages.php">
+                                <div class="icon-wrapper"><span><i class="icon icon-612844"></i><span class="icon-hover"></span></span></div>
+                                <h4 class="title">Coupon</h4>
+                                <p>We like providing our<br/> customers with more than just one way to save</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- #primary -->
+</div><!-- #pageContent -->
+
+<?php require_once '../includes/footer.php'; ?>
+

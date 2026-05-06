@@ -1,11 +1,6 @@
-<nav class="panel-menu" id="mobile-menu">
-<ul>
-</ul>
-<div class="mm-navbtn-names">
-<div class="mm-closebtn">Close</div>
-<div class="mm-backbtn">Back</div>
-</div>
-</nav>
+<nav class="panel-menu" id="mobile-menu"><ul></ul></nav>
+<?php $current_page = basename($_SERVER['PHP_SELF']); ?>
+
 <!-- Loader -->
 <div id="loader-wrapper">
 <div class="loader">
@@ -28,93 +23,62 @@
 </div>
 </div>
 <!-- //Loader -->
+
 <!-- Header -->
 <header class="page-header page-header-1 sticky">
-<nav class="navbar" id="slide-nav">
-<div class="container">
-<div class="header-info-mobile">
-<div class="header-info-mobile-inside">
-<p><i class="icon icon-locate"></i>
-								174/1, Old Kesbewa Road, Delkanda, Nugegoda							</p>
-<p><i class="icon icon-phone"></i>
-								011-554-8648 / 011-554-8649, Fax: 0112-819-809							</p>
-<p><i class="icon icon-email"></i>
-								autoshine88@gmail.com							</p>
-<p><i class="icon icon-clock"></i>
-								Mon-Fri: 9:00 am – 5:00							</p>
-</div>
-</div>
-<div class="heade-mobile-top">
-<div class="header-info-toggle"><i class="icon-arrow_down js-info-toggle"></i></div>
-<a class="appointment" data-target="#appointmentForm" data-toggle="modal" href="#"><i class="icon-shape icon"></i>
-<span>Appointment</span> </a>
-</div>
-<div class="heade-mobile">
-<div class="col-left mr-auto">
-<div class="logo">
-<a href="index.html">
-<img alt="Logo" src="assets/images/Auto-Shine-logo.png"/>
-</a>
-</div>
-</div>
-<div class="col-right">
-<div class="address">
-						Mon-Fri: 9:00 am – 5:00						</div>
-<a class="appointment" data-target="#appointmentForm" data-toggle="modal" href="#"><i class="icon-shape icon"></i>
-<span>Appointment</span> </a>
-<div class="search-container">
-<form action="https://autoshine.lk/" method="get" role="search">
-<input id="search-form-69f86d8a42ff0" name="s" placeholder="Search …" type="search" value=""/>
-<button class="button" type="submit"><i class="icon icon-search"></i></button>
-</form>
-</div> <button class="navbar-toggle" style="" type="button">
-<span></span>
-<span></span>
-<span></span>
-</button>
-</div>
-</div>
-<div class="header-row">
-<div class="header-info-toggle"><i class="icon-arrow_down js-info-toggle"></i></div>
-<div class="logo">
-<a href="index.html"><img alt="Logo" src="assets/images/Auto-Shine-logo_1.png"/>
-</a>
-</div>
-<div class="header-right">
-<div class="header-right-top">
-<div class="address">
-									Monday-Saturday <span class="custom-color">7:00AM - 6:00PM</span> </div>
-<a class="appointment" data-target="#appointmentForm" data-toggle="modal" href="#"><i class="icon-shape icon"></i>
-<span>Appointment</span> </a>
-<button class="navbar-toggle" type="button"><i class="icon icon-lines-menu"></i></button>
-</div>
-<div class="header-right-bottom">
-<div class="header-phone">
-<span class="phone-number">Call Us <a href="tel:0115548648">0115548648</a> | Whatsapp <a href="tel:0702211022">0702211022</a></span> </div>
-<!--stop mini cart-->
-</div>
-</div>
-</div>
-<div id="slidemenu">
-<div class="row">
-<div class="col-md-11">
-<div class="close-menu"><i class="icon-close-cross"></i></div>
-<ul class="nav navbar-nav" id="menu-primary-menu"><li class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-56 current_page_item" id="nav-menu-item-1566"><a class="menu-link main-menu-link" href="index.html">Home</a></li>
-<li class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page" id="nav-menu-item-1569"><a class="menu-link main-menu-link" href="about-us/index.html">About Us</a></li>
-<li class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page" id="nav-menu-item-1568"><a class="menu-link main-menu-link" href="services/index.html">Services</a></li>
-<li class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page" id="nav-menu-item-2183"><a class="menu-link main-menu-link" href="gallery/index.html">Gallery</a></li>
-<li class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page" id="nav-menu-item-2518"><a class="menu-link main-menu-link" href="packages/index.html">Packages</a></li>
-<li class="main-menu-item menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page" id="nav-menu-item-1567"><a class="menu-link main-menu-link" href="contacts/index.html">Contact Us</a></li>
-</ul> </div>
-<div class="col-md-1">
-<div class="search-container">
-<form action="https://autoshine.lk/" method="get" role="search">
-<input id="search-form-69f86d8a45139" name="s" placeholder="Search …" type="search" value=""/>
-<button class="button" type="submit"><i class="icon icon-search"></i></button>
-</form>
-</div> </div>
-</div>
-</div>
-</div>
-</nav>
+    <!-- Top Bar -->
+    <div class="header-top-bar">
+        <div class="container-fluid px-lg-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-info-list">
+                        <span><i class="icon icon-locate"></i> 174/1, Old Kesbewa Road, Nugegoda</span>
+                        <span class="divider">|</span>
+                        <span><i class="icon icon-phone"></i> 011-554-8648</span>
+                        <span class="divider">|</span>
+                        <span class="whatsapp-top"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fede00" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.887.002-5.462-4.415-9.89-9.881-9.891-5.446 0-9.884 4.438-9.887 9.887-.001 2.22.634 4.385 1.841 6.204l-1.013 3.705 3.854-.91c1.676.995 3.276 1.591 5.392 1.592zM12 21c-1.858 0-3.664-.473-5.263-1.372l-.377-.213-3.854.91 1.013-3.705-.233-.372c-1.031-1.642-1.574-3.542-1.573-5.503.003-5.449 4.439-9.885 9.888-9.885 2.64 0 5.122 1.028 6.988 2.896 1.866 1.867 2.894 4.348 2.892 6.989-.003 5.449-4.44 9.885-9.888 9.885zm4.753-12.72c-.271-.12-.413-.18-.705-.18-.291 0-.432.06-.703.18l-1.31.63c-.15.071-.349.094-.5.06-.151-.035-.3-.116-.411-.233l-1.332-1.425c-.2-.213-.233-.538-.081-.787.151-.249.467-.323.704-.171l.661.42c.15.093.336.105.495.032s.273-.222.31-.397l.31-1.442c.071-.329-.125-.658-.454-.755-.329-.097-.66.071-.787.387l-.42 1.05c-.12.301-.137.636-.048.948.089.312.274.593.528.805l1.64 1.365c.42.349.957.514 1.488.455.531-.059 1.017-.323 1.348-.73l.63-.78c.2-.249.167-.611-.073-.822l-1.368-.828z"/></svg> <a href="https://wa.me/94702211022" style="color: inherit; text-decoration: none; margin-left: 5px;">0702211022</a></span>
+                        <span class="divider">|</span>
+                        <span><i class="icon icon-clock"></i> Mon - Sat: 7:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="slide-nav">
+        <div class="container-fluid px-lg-5">
+            <div class="header-row-unified">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.php">
+                        <img alt="Logo" src="assets/images/Auto-Shine-logo_1.png" class="logo-main"/>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu wrapped in slidemenu for sliding effect -->
+                <div id="slidemenu">
+                    <div class="main-menu-wrapper hidden-xs hidden-sm">
+                        <ul class="nav navbar-nav">
+                            <li class="<?php echo ($current_page == 'index.php' || $current_page === '') ? 'current-menu-item' : ''; ?>"><a href="index.php">Home</a></li>
+                            <li class="<?php echo ($current_page == 'about-us.php') ? 'current-menu-item' : ''; ?>"><a href="about-us.php">About Us</a></li>
+                            <li class="<?php echo ($current_page == 'services.php' || strpos($current_page, 'service-') === 0) ? 'current-menu-item' : ''; ?>"><a href="services.php">Services</a></li>
+                            <li class="<?php echo ($current_page == 'gallery.php') ? 'current-menu-item' : ''; ?>"><a href="gallery.php">Gallery</a></li>
+                            <li class="<?php echo ($current_page == 'packages.php') ? 'current-menu-item' : ''; ?>"><a href="packages.php">Packages</a></li>
+                            <li class="<?php echo ($current_page == 'contacts.php') ? 'current-menu-item' : ''; ?>"><a href="contacts.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Actions (Visible on both Mobile and Desktop) -->
+                <div class="header-actions">
+                    <a class="appointment-btn" data-target="#appointmentForm" data-toggle="modal" href="#">
+                        <i class="icon-shape icon"></i> <span>Appointment</span>
+                    </a>
+                    <button class="navbar-toggle" type="button">
+                        <i class="icon icon-lines-menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 </header>
