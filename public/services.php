@@ -387,7 +387,7 @@ require_once '../includes/header.php';
 <p class="info">We specialize in car repair. We're the one of largest accident damage repair network</p>
 <h2 class="h-phone">011-554-8648</h2>
 <div class="btn-inline">
-<a class="btn btn-border btn-wide" data-target="#" data-toggle="modal" href="#"><span>Contact Now</span></a>
+<a class="btn btn-border btn-wide" href="tel:0115548648"><span>Call Now</span></a>
 </div>
 </div>
 </div>

@@ -48,8 +48,8 @@ function getEmailTemplate($title, $content) {
     <body>
         <div class="container">
             <div class="header">
-                <h1 style="margin:0;">AUTOSHINE</h1>
-                <p style="margin:0; font-size: 14px;">Quality Auto Service & Maintenance</p>
+                <img src="cid:logo_img" alt="Autoshine Logo" style="max-width: 200px;">
+                <p style="margin:5px 0 0; font-size: 14px;">Quality Auto Service & Maintenance</p>
             </div>
             <div class="content">
                 <h2 style="color: #2d2d2d; margin-top: 0;">' . $title . '</h2>

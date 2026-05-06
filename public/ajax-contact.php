@@ -34,6 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->addAddress('geminiuser677@gmail.com');
         $mail->addReplyTo($email, $name);
 
+        // Attachments
+        $mail->addEmbeddedImage(__DIR__ . '/assets/images/Auto-Shine-logo.png', 'logo_img');
+
         // Content
         $mail->isHTML(true);
         $mail->Subject = "New Website Inquiry: $name";
