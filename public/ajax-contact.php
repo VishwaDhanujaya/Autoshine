@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail = getPHPMailerInstance();
         
         // Recipients
-        $mail->addAddress('geminiuser677@gmail.com');
+        $mail->addAddress('gallagevishwa@gmail.com');
         $mail->addReplyTo($email, $name);
 
         // Attachments
