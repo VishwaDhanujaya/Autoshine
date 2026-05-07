@@ -1,3 +1,7 @@
+<?php 
+require_once 'security.php'; 
+$csrf_token = generateCsrfToken();
+?>
 <!DOCTYPE html>
 <html lang="en-GB">
 

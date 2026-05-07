@@ -10,15 +10,18 @@ function getPHPMailerInstance() {
 
     // Server settings
     $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';
+    $mail->Host       = $_ENV['SMTP_HOST'] ?? 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'gallagevishwa@gmail.com';
-    $mail->Password   = 'zmzxrnfsgvzlqqjd'; // Gmail App Password
+    $mail->Username   = $_ENV['SMTP_USER'] ?? '';
+    $mail->Password   = $_ENV['SMTP_PASS'] ?? '';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+    $mail->Port       = $_ENV['SMTP_PORT'] ?? 587;
 
     // Default sender
-    $mail->setFrom('gallagevishwa@gmail.com', 'Autoshine Website');
+    $mail->setFrom(
+        $_ENV['SMTP_FROM_EMAIL'] ?? 'gallagevishwa@gmail.com', 
+        $_ENV['SMTP_FROM_NAME'] ?? 'Autoshine Website'
+    );
     
     return $mail;
 }

@@ -1,24 +1,30 @@
 <?php
-// Contact form handler
+require_once __DIR__ . '/../includes/security.php';
 header('Content-Type: application/json');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name    = filter_input(INPUT_POST, 'your-name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $email   = filter_input(INPUT_POST, 'your-email', FILTER_SANITIZE_EMAIL);
-    $message = filter_input(INPUT_POST, 'your-message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $honeypot = $_POST['website_hp'];
+    // CSRF Protection
+    verifyCsrfToken($_POST['csrf_token'] ?? '');
+
+    // Input Sanitization
+    $name     = sanitizeInput($_POST['your-name'] ?? '');
+    $email    = sanitizeInput($_POST['your-email'] ?? '');
+    $message  = sanitizeInput($_POST['your-message'] ?? '');
+    $honeypot = $_POST['website_hp'] ?? '';
     
+    // Spam check
     if (!empty($honeypot)) {
         echo json_encode(['status' => 'error', 'message' => 'Spam detected.']);
         exit;
     }
 
+    // Basic Validation
     if (empty($name) || empty($email) || empty($message)) {
         echo json_encode(['status' => 'error', 'message' => 'Please fill in all fields.']);
         exit;
     }
 
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (!validateEmail($email)) {
         echo json_encode(['status' => 'error', 'message' => 'Invalid email format.']);
         exit;
     }
@@ -28,14 +34,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         $mail = getPHPMailerInstance();
         
-        // Recipients
-        $mail->addAddress('gallagevishwa@gmail.com');
+        $mail->addAddress($_ENV['RECIPIENT_EMAIL'] ?? 'gallagevishwa@gmail.com');
         $mail->addReplyTo($email, $name);
-
-        // Attachments
         $mail->addEmbeddedImage(__DIR__ . '/assets/images/Auto-Shine-logo.png', 'logo_img');
 
-        // Content
         $mail->isHTML(true);
         $mail->Subject = "New Website Inquiry: $name";
         
@@ -54,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->send();
         echo json_encode(['status' => 'success', 'message' => 'Your message has been sent successfully!']);
     } catch (Exception $e) {
-        echo json_encode(['status' => 'error', 'message' => 'Oops! Something went wrong. Error: ' . $mail->ErrorInfo]);
+        echo json_encode(['status' => 'error', 'message' => 'Oops! Something went wrong.']);
     }
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Invalid request method.']);

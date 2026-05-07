@@ -1,4 +1,6 @@
 <?php
+require_once '../includes/security.php';
+
 $body_class = "contacts elementor-page";
 $page_title = "Contact Us";
 $page_description = "Get in touch with Autoshine for all your automotive questions. Visit our shop in Nugegoda or call us for an appointment.";
@@ -8,10 +10,14 @@ $status_message = "";
 $status_type = ""; // success or error
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['your-name'])) {
-    $name    = filter_input(INPUT_POST, 'your-name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $email   = filter_input(INPUT_POST, 'your-email', FILTER_SANITIZE_EMAIL);
-    $message = filter_input(INPUT_POST, 'your-message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $honeypot = $_POST['website_hp'];
+    // CSRF Protection
+    verifyCsrfToken($_POST['csrf_token'] ?? '');
+
+    // Input Sanitization
+    $name     = sanitizeInput($_POST['your-name'] ?? '');
+    $email    = sanitizeInput($_POST['your-email'] ?? '');
+    $message  = sanitizeInput($_POST['your-message'] ?? '');
+    $honeypot = $_POST['website_hp'] ?? '';
     
     if (!empty($honeypot)) {
         $status_message = "Spam detected.";
@@ -19,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['your-name'])) {
     } elseif (empty($name) || empty($email) || empty($message)) {
         $status_message = "Please fill in all fields.";
         $status_type = "error";
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    } elseif (!validateEmail($email)) {
         $status_message = "Invalid email format.";
         $status_type = "error";
     } else {
@@ -28,11 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['your-name'])) {
         try {
             $mail = getPHPMailerInstance();
             
-            // Recipients
-            $mail->addAddress('gallagevishwa@gmail.com');
+            $mail->addAddress($_ENV['RECIPIENT_EMAIL'] ?? 'gallagevishwa@gmail.com');
             $mail->addReplyTo($email, $name);
 
-            // Content
             $mail->isHTML(false);
             $mail->Subject = "New Contact Form Inquiry from $name";
             $mail->Body    = "Name: $name\nEmail: $email\n\nMessage:\n$message";
@@ -41,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['your-name'])) {
             $status_message = "Your message has been sent successfully!";
             $status_type = "success";
         } catch (Exception $e) {
-            $status_message = "Oops! Something went wrong. Error: {$mail->ErrorInfo}";
+            $status_message = "Oops! Something went wrong.";
             $status_type = "error";
         }
     }
@@ -115,6 +119,9 @@ require_once '../includes/header.php';
                             <?php endif; ?>
 
                             <form action="contacts.php" id="contact-form-element" class="contact-form" method="post">
+                                <!-- CSRF Token -->
+                                <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
+                                
                                 <!-- Honeypot -->
                                 <div style="display:none;">
                                     <input type="text" name="website_hp" value="">

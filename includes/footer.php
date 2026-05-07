@@ -88,10 +88,14 @@
                     <div class="divider divider-sm"></div>
                     
                     <form action="#" id="appointment-form-element" class="contact-form form-horizontal form-default" method="post">
+                        <!-- CSRF Token -->
+                        <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
+                        
                         <!-- Honeypot -->
                         <div style="display:none;">
                             <input type="text" name="website_hp" value="">
                         </div>
+                        
                         <div class="row">
                             <div class="col-md-4">
                                 <h5>Contact Info</h5>
