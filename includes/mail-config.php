@@ -4,10 +4,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-/**
- * Creates and configures a PHPMailer instance
- * @return PHPMailer
- */
+// Creates and configures a PHPMailer instance
 function getPHPMailerInstance() {
     $mail = new PHPMailer(true);
 
@@ -26,9 +23,7 @@ function getPHPMailerInstance() {
     return $mail;
 }
 
-/**
- * Wraps content in a professional HTML email template
- */
+// Wraps content in a professional HTML email template
 function getEmailTemplate($title, $content) {
     return '
     <!DOCTYPE html>

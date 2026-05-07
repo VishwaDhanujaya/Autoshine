@@ -1,6 +1,6 @@
 <?php $current_service = basename($_SERVER['PHP_SELF']); ?>
 <div class="block-aside-wrapper sticky-sidebar">
-    <!-- Services Navigation -->
+    <!-- Sidebar Navigation -->
     <div class="block-aside">
         <h4 class="block-aside__title">Repair Services</h4>
         <ul class="category-list service-nav">
@@ -13,7 +13,7 @@
         </ul>
     </div>
     
-    <!-- Business Hours Card -->
+    <!-- Business Hours -->
     <div class="block-aside">
         <div class="info-hours-card">
             <h4 class="info-hours-card__title"><i class="icon icon-clock"></i> Service Hours</h4>

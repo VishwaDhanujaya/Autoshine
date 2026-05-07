@@ -6,7 +6,7 @@ require_once '../includes/header.php';
 ?>
 <?php require_once '../includes/navbar.php'; ?>
 
-<!-- Page Title Bar -->
+<!-- Page Title -->
 <div class="page-title-wrapper" id="pageTitle">
     <div class="container">
         <h1>Transmission Service &amp; Repair</h1>
@@ -20,14 +20,14 @@ require_once '../includes/header.php';
         <div class="container">
             <div class="row service-single">
 
-                <!-- Sidebar (reserved for future navigation) -->
+                <!-- Sidebar Navigation -->
                 <div class="col-lg-3 col-md-4">
                     <?php include_once '../includes/sidebar-services.php'; ?>
                 </div>
 
                 <div class="divider-lg hidden-lg hidden-md hidden-sm"></div>
 
-                <!-- Main service content -->
+                <!-- Service Content -->
                 <div class="col-lg-9 col-md-8">
                     <img decoding="async" loading="lazy" alt="Service" class="img-responsive" src="assets/images/services-item-img01.jpg"/>
                     <div class="divider-md"></div>
@@ -48,7 +48,7 @@ require_once '../includes/header.php';
 
                     </div>
 
-                    <!-- Image + trust copy -->
+                    <!-- Trust & Products -->
                     <div class="row content-top">
                         <div class="col-md-6">
                             <img decoding="async" loading="lazy" alt="" class="img-responsive" src="assets/images/services-item-img02.jpg"/>
@@ -63,7 +63,7 @@ require_once '../includes/header.php';
 
                     <p class="content-top-lg">Oil is the lifeblood of your engine. It reduces friction, lessens wear, provides lubrication, forms a seal between the pistons, rings and cylinder walls while helping to cool engine parts. Without the cleaning action of new oil, carbon and varnish buildup would be toxic to the engine. And engine oil even dampens the shock and noise of moving parts.</p>
 
-                    <!-- CTA: Appointment + Coupon -->
+                    <!-- CTAs -->
                     <div class="row">
                         <div class="col-md-6">
                             <a class="text-icon-sm" data-target="#appointmentForm" data-toggle="modal" href="#">

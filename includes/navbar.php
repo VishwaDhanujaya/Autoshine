@@ -1,7 +1,7 @@
 <nav class="panel-menu" id="mobile-menu"><ul></ul></nav>
 <?php $current_page = basename($_SERVER['PHP_SELF']); ?>
 
-<!-- Loader -->
+<!-- Page Loader -->
 <div id="loader-wrapper">
 <div class="loader">
 <div class="line"></div>
@@ -22,11 +22,11 @@
 <div class="loading">Loading</div>
 </div>
 </div>
-<!-- //Loader -->
+<!-- // End Loader -->
 
-<!-- Header -->
+<!-- Site Header -->
 <header class="page-header page-header-1 sticky">
-    <!-- Top Bar -->
+    <!-- Info Bar -->
     <div class="header-top-bar">
         <div class="container-fluid px-lg-5">
             <div class="row">
@@ -55,7 +55,7 @@
                     </a>
                 </div>
 
-                <!-- Desktop Menu wrapped in slidemenu for sliding effect -->
+                <!-- Navigation Menu -->
                 <div id="slidemenu">
                     <div class="main-menu-wrapper hidden-xs hidden-sm">
                         <ul class="nav navbar-nav">

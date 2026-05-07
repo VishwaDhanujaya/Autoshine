@@ -1,8 +1,5 @@
 <?php
-/**
- * AJAX Form Handler for Autoshine.lk
- * Handles various asynchronous requests from theme-custom.js
- */
+// AJAX Form Handler
 
 // Basic security check
 // In a real application, you'd use nonces here

@@ -1,7 +1,5 @@
 <?php
-/**
- * AJAX Contact Form Handler
- */
+// Contact form handler
 header('Content-Type: application/json');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

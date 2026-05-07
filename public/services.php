@@ -7,12 +7,12 @@ require_once '../includes/header.php';
 <?php require_once '../includes/navbar.php'; ?>
 
 
-<!-- // Header -->
+<!-- Header -->
 <div class="page-title-wrapper" id="pageTitle">
 <div class="container">
-<!-- //Breadcrumbs Block -->
+<!-- Breadcrumbs -->
 <h1>Our Services</h1>
-<!-- Breadcrumbs Block -->
+<!-- Breadcrumbs -->
 <div class="breadcrumbs">
 <div class="breadcrumb">
 <div class="breadcrumbs">
@@ -399,7 +399,7 @@ require_once '../includes/header.php';
 </section>
 </div>
 </div>
-<!-- //Block -->
+<!-- Content Block -->
 </div> </div><!-- #primary -->
 </div><!-- #pageContent -->
 <!-- Footer -->

@@ -3,7 +3,7 @@ $body_class = "contacts elementor-page";
 $page_title = "Contact Us";
 $page_description = "Get in touch with Autoshine for all your automotive questions. Visit our shop in Nugegoda or call us for an appointment.";
 
-// Form Processing Logic
+// Handle form submission
 $status_message = "";
 $status_type = ""; // success or error
 
@@ -51,7 +51,7 @@ require_once '../includes/header.php';
 ?>
 <?php require_once '../includes/navbar.php'; ?>
 
-<!-- Page Title Bar -->
+<!-- Page Title -->
 <div class="page-title-wrapper" id="pageTitle">
     <div class="container">
         <h1>Contact Us</h1>

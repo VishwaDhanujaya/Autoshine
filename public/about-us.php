@@ -6,7 +6,7 @@ require_once '../includes/header.php';
 ?>
 <?php require_once '../includes/navbar.php'; ?>
 
-<!-- Page Title Bar -->
+<!-- Page Title -->
 <div class="page-title-wrapper" id="pageTitle">
     <div class="container">
         <h1>About <span class="color">Us</span></h1>

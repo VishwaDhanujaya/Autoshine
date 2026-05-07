@@ -1,5 +1,5 @@
 <div class="page-footer">
-    <!-- Full Width Map Section with Glass Card -->
+    <!-- Map & Contact Card -->
     <div class="footer-map-section">
         <div class="footer-map-container" id="footer-map">
             <iframe allowfullscreen="" aria-hidden="false" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.22666591487!2d79.89905931426759!3d6.863417321023605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a66bf18e989%3A0x1738eb7d657e5dbc!2sAutoshine%20Pvt%20Limited!5e0!3m2!1sen!2slk!4v1594793495694!5m2!1sen!2slk" tabindex="0"></iframe>
@@ -157,7 +157,7 @@
 </div>
 </div>
 </div>
-<!-- Print Only Container -->
+<!-- Print Container -->
 <div id="print-only-container" class="print-only"></div>
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/94702211022" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
@@ -199,7 +199,7 @@
     }
 }
 
-/* Print Styles */
+/* Print Settings */
 @media print {
     body * {
         display: none !important;
