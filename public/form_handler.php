@@ -24,11 +24,7 @@ switch ($action) {
         break;
 
     default:
-        // If no action matched, but it might be a direct form post
-        if (isset($_POST['appt-submit'])) {
-            include_once '../includes/appointment-logic.php';
-            // Logic is already handled in the include if POST is set
-        }
+        // Action not found
         break;
 }
 

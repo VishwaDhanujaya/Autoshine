@@ -51,7 +51,7 @@
                 <!-- Logo -->
                 <div class="logo">
                     <a href="index.php">
-                        <img alt="Logo" src="assets/images/Auto-Shine-logo_1.png" class="logo-main"/>
+                        <img alt="Logo" src="assets/images/Auto-Shine-logo.png" class="logo-main"/>
                     </a>
                 </div>
 

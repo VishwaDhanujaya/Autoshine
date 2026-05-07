@@ -56,7 +56,7 @@
 <span class="icon icon-arrow_up"></span>
 </a>
 </div>
-<?php include_once 'appointment-logic.php'; ?>
+
 <div class="modal fade" id="appointmentForm">
     <div class="modal-dialog container">
         <div class="modal-content">
@@ -73,7 +73,7 @@
 
                     <div class="divider divider-sm"></div>
                     
-                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>#appointmentForm" id="appointment-form-element" class="contact-form form-horizontal form-default" method="post">
+                    <form action="#" id="appointment-form-element" class="contact-form form-horizontal form-default" method="post">
                         <!-- Honeypot -->
                         <div style="display:none;">
                             <input type="text" name="website_hp" value="">
@@ -123,11 +123,7 @@
                                 <button class="btn btn-border btn-invert" name="appt-submit" type="submit"><span>Submit</span></button>
                             </div>
                             <div class="col-sm-8 text-left">
-                                <?php if ($appt_status_message): ?>
-                                    <div class="alert <?php echo $appt_status_type == 'success' ? 'alert-success' : 'alert-danger'; ?>" style="padding: 10px; margin: 0; border-radius: 4px; display: inline-block;">
-                                        <?php echo $appt_status_message; ?>
-                                    </div>
-                                <?php endif; ?>
+                                <div class="msg-container"></div>
                             </div>
                         </div>
                     </form>

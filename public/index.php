@@ -63,7 +63,7 @@ require_once '../includes/header.php'; ?>
                 </div>
                 <div class="promo-01__col-center">
                     <div class="promo-01__description">We realize that you lead a busy life, so we have made it easy for you to drop off your vehicle 24/7.</div>
-                    <div class="promo-01__img"><img alt="Autoshine After Hours Key Drop-off" decoding="async" src="assets/images/banner-key-new.png"/></div>
+                    <div class="promo-01__img"><img alt="Autoshine After Hours Key Drop-off" decoding="async" loading="lazy" src="assets/images/banner-key-new.png"/></div>
                 </div>
                 <div class="promo-01__col-right">
                     <a class="btn btn-border anchoring-link" href="#appointment-cta"><span>Contact Now</span></a>

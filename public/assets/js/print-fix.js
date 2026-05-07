@@ -117,5 +117,39 @@
                 }
             });
         });
+
+        // --- Interactive Form Validation ---
+        
+        // Helper function for email validation
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        // Helper function for phone validation (basic)
+        function isValidPhone(phone) {
+            return /^[\d\s\-\+\(\)]{7,15}$/.test(phone);
+        }
+
+        // Apply real-time feedback
+        $(document).on('input blur', 'input[type="email"], input[name*="phone"]', function() {
+            var $field = $(this);
+            var value = $field.val();
+            var isValid = true;
+
+            if ($field.attr('type') === 'email') {
+                isValid = value === '' || isValidEmail(value);
+            } else if ($field.attr('name').indexOf('phone') !== -1) {
+                isValid = value === '' || isValidPhone(value);
+            }
+
+            if (!isValid) {
+                $field.css('border-color', '#ff4d4d').addClass('field-error');
+            } else {
+                $field.css('border-color', '').removeClass('field-error');
+            }
+        });
+
+        // Style for errors
+        $('<style>.field-error { background-color: #fff8f8 !important; }</style>').appendTo('head');
     });
 })(jQuery);
