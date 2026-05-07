@@ -1278,6 +1278,13 @@
             }
         }
 
+        .header-actions {
+            display: flex !important;
+            align-items: center !important;
+            visibility: visible !important;
+            gap: 20px !important;
+        }
+
         /* ── Global Mobile Optimization ── */
         @media (max-width: 767px) {
 
@@ -1335,6 +1342,9 @@
                 /* Remove any transform/animation that could offset position */
                 transform: none !important;
             }
+
+
+
 
             /* Reset body/html to no top margin, then add padding equal to header height */
             html {
@@ -1410,11 +1420,7 @@
                 display: block !important;
             }
 
-            .header-actions {
-                display: flex !important;
-                align-items: center !important;
-                visibility: visible !important;
-            }
+
 
             /* Appointment Button — always compact, never full-width */
             .appointment-btn {
@@ -1431,6 +1437,165 @@
                 white-space: nowrap !important;
                 width: auto !important;
                 box-shadow: 0 4px 10px rgba(254, 222, 0, 0.3) !important;
+            }
+        }
+
+        /* ── Search Feature Styles ── */
+        .search-trigger-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            width: auto;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            padding: 0;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        .search-trigger-btn:hover {
+            color: #fede00;
+            transform: scale(1.1);
+        }
+
+        .search-trigger-btn:focus {
+            outline: none;
+        }
+
+        .search-trigger-btn i {
+            font-size: 18px;
+        }
+
+        .search-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(15px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        .search-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .search-close {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 50px;
+            cursor: pointer;
+            line-height: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .search-close:hover {
+            color: #fede00;
+            transform: rotate(90deg);
+        }
+
+        .search-overlay-content {
+            width: 100%;
+            max-width: 800px;
+            padding: 0 30px;
+            text-align: center;
+            transform: translateY(50px);
+            opacity: 0;
+            transition: all 0.5s 0.2s ease;
+        }
+
+        .search-overlay.active .search-overlay-content {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .search-form {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .search-form input {
+            width: 100%;
+            background: none;
+            border: none;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+            color: #fff !important;
+            font-size: 30px;
+            font-weight: 500;
+            padding: 15px 60px 15px 0;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-form input:focus {
+            border-color: #fede00;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        .search-submit {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #fede00;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .search-suggestions {
+            color: #888;
+            font-size: 16px;
+        }
+
+        .search-suggestions a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s;
+        }
+
+        .search-suggestions a:hover {
+            color: #fede00;
+            border-color: #fede00;
+        }
+
+        @media (max-width: 767px) {
+            .search-trigger-btn {
+                width: 25px;
+                height: 32px;
+            }
+
+            .search-trigger-btn i {
+                font-size: 16px;
+            }
+
+            .search-form input {
+                font-size: 24px;
+            }
+
+            .search-close {
+                top: 20px;
+                right: 20px;
+                font-size: 40px;
             }
         }
     </style>

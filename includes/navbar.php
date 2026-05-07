@@ -71,6 +71,9 @@
 
                 <!-- Actions (Visible on both Mobile and Desktop) -->
                 <div class="header-actions">
+                    <button class="search-trigger-btn" id="searchTrigger" title="Search site">
+                        <i class="icon icon-search"></i>
+                    </button>
                     <a class="appointment-btn" data-target="#appointmentForm" data-toggle="modal" href="#">
                         <i class="icon-shape icon"></i> <span>Appointment</span>
                     </a>

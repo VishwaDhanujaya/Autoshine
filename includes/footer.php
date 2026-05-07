@@ -51,6 +51,20 @@
         </div>
     </div>
 </div>
+<!-- Full Screen Search Overlay -->
+<div id="searchOverlay" class="search-overlay">
+    <button class="search-close" id="searchClose">&times;</button>
+    <div class="search-overlay-content">
+        <form action="search.php" method="GET" class="search-form">
+            <input type="text" name="q" placeholder="What are you looking for?" id="searchInput" autocomplete="off">
+            <button type="submit" class="search-submit"><i class="icon icon-search"></i></button>
+        </form>
+        <div class="search-suggestions">
+            <p>Try searching for: <a href="search.php?q=Detailing">Detailing</a>, <a href="search.php?q=Brakes">Brakes</a>, <a href="search.php?q=Hybrid">Hybrid</a></p>
+        </div>
+    </div>
+</div>
+
 <div class="back-to-top" style="bottom: 15px;">
 <a href="#top">
 <span class="icon icon-arrow_up"></span>
@@ -284,6 +298,34 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.reveal-effect').forEach(el => {
         observer.observe(el);
     });
+
+    // Search Overlay Logic
+    const searchTrigger = document.getElementById('searchTrigger');
+    const searchOverlay = document.getElementById('searchOverlay');
+    const searchClose = document.getElementById('searchClose');
+    const searchInput = document.getElementById('searchInput');
+
+    if (searchTrigger && searchOverlay && searchClose) {
+        searchTrigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            searchOverlay.classList.add('active');
+            setTimeout(() => searchInput.focus(), 300);
+            document.body.style.overflow = 'hidden'; // Prevent scroll
+        });
+
+        searchClose.addEventListener('click', function() {
+            searchOverlay.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scroll
+        });
+
+        // Close on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+                searchOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
 });
 </script>
 </body>
