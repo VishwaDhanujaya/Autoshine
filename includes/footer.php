@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-md-4 text-md-right">
                     <div class="social-links-footer">
-                        <a href="https://www.facebook.com/autoshine.lk" target="_blank" class="icon icon-facebook-logo"></a>
+                        <a href="https://www.facebook.com/autoshinesrilanka" target="_blank" class="icon icon-facebook-logo"></a>
                         <a href="https://www.instagram.com/autoshine.lk" target="_blank" class="icon icon-instagram-logo"></a>
                         <a href="#" class="icon icon-twitter-logo"></a>
                     </div>
@@ -282,55 +282,6 @@
 </script>
 
 <!-- Scroll Reveal Logic -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                // Optional: stop observing once revealed
-                // observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.reveal-effect').forEach(el => {
-        observer.observe(el);
-    });
-
-    // Search Overlay Logic
-    const searchTrigger = document.getElementById('searchTrigger');
-    const searchOverlay = document.getElementById('searchOverlay');
-    const searchClose = document.getElementById('searchClose');
-    const searchInput = document.getElementById('searchInput');
-
-    if (searchTrigger && searchOverlay && searchClose) {
-        searchTrigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            searchOverlay.classList.add('active');
-            setTimeout(() => searchInput.focus(), 300);
-            document.body.style.overflow = 'hidden'; // Prevent scroll
-        });
-
-        searchClose.addEventListener('click', function() {
-            searchOverlay.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scroll
-        });
-
-        // Close on ESC key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
-                searchOverlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-    }
-});
 </script>
 </body>
 </html>

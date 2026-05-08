@@ -264,3 +264,26 @@ span.services-tabs-icon svg {
 .icon-arrow_down:before {
   content: "\e92b";
 }
+
+/* Lazy Loading Styles */
+.lazy-bg {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.lazy-bg:not(.lazy-loaded) {
+  background-image: none !important;
+}
+
+.lazy-bg.lazy-loaded {
+  opacity: 1;
+}
+
+.lazy-img {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.lazy-img.lazy-loaded {
+  opacity: 1;
+}

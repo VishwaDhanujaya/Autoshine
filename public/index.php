@@ -23,7 +23,7 @@ require_once '../includes/header.php'; ?>
             </div>
 
             <div class="slide" id="slide-2">
-                <div class="img--holder" style="background-image: url(assets/images/slide2.jpg); min-height: 526px;"></div>
+                <div class="img--holder" data-bg="assets/images/slide2.jpg" style="min-height: 526px;"></div>
                 <div class="slide-content left">
                     <div class="vert-wrap container"><div class="vert"><div class="container">
                         <h4 data-animation="zoomIn" data-animation-delay="0.5s">Full Service of</h4>
@@ -35,7 +35,7 @@ require_once '../includes/header.php'; ?>
             </div>
 
             <div class="slide" id="slide-3">
-                <div class="img--holder" style="background-image: url(assets/images/slide3.jpg); min-height: 526px;"></div>
+                <div class="img--holder" data-bg="assets/images/slide3.jpg" style="min-height: 526px;"></div>
                 <div class="slide-content center">
                     <div class="vert-wrap container"><div class="vert"><div class="container">
                         <h4 data-animation="zoomIn" data-animation-delay="0.5s">Trust Your Vehicle to</h4>

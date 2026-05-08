@@ -103,7 +103,7 @@ require_once '../includes/header.php';
 </section>
 
 <!-- Team Carousel (hidden until real photos are available) -->
-<section id="team" class="reveal-effect display-none">
+<section id="team" class="reveal-effect">
     <div class="block position-relative overflow-hidden">
         <div class="container">
             <div class="block-title">
@@ -118,7 +118,7 @@ require_once '../includes/header.php';
                     <div class="item">
                         <div class="card01">
                             <div class="card01__img">
-                                <img loading="lazy" alt="" decoding="async" src="assets/images/card01-img01.png"/>
+                                <img loading="lazy" alt="" decoding="async" src="https://smartdata.tonytemplates.com/car-repair-service-v4/car1/wp-content/uploads/sites/5/2020/03/card01-img01.png"/>
                                 <ul class="card01__social-icon">
                                     <li><a class="icon icon-59439" href="#" target="_blank" rel="noopener noreferrer"></a></li>
                                     <li><a class="icon icon-8800" href="#" target="_blank" rel="noopener noreferrer"></a></li>
@@ -135,7 +135,7 @@ require_once '../includes/header.php';
                     <div class="item">
                         <div class="card01">
                             <div class="card01__img">
-                                <img loading="lazy" alt="" decoding="async" src="assets/images/card01-img02.png"/>
+                                <img loading="lazy" alt="" decoding="async" src="https://smartdata.tonytemplates.com/car-repair-service-v4/car1/wp-content/uploads/sites/5/2020/03/card01-img02.png"/>
                                 <ul class="card01__social-icon">
                                     <li><a class="icon icon-59439" href="#" target="_blank" rel="noopener noreferrer"></a></li>
                                     <li><a class="icon icon-8800" href="#" target="_blank" rel="noopener noreferrer"></a></li>
@@ -152,7 +152,7 @@ require_once '../includes/header.php';
                     <div class="item">
                         <div class="card01">
                             <div class="card01__img">
-                                <img loading="lazy" alt="" decoding="async" src="assets/images/card01-img03.png"/>
+                                <img loading="lazy" alt="" decoding="async" src="https://smartdata.tonytemplates.com/car-repair-service-v4/car1/wp-content/uploads/sites/5/2020/03/card01-img03.png"/>
                                 <ul class="card01__social-icon">
                                     <li><a class="icon icon-59439" href="#" target="_blank" rel="noopener noreferrer"></a></li>
                                     <li><a class="icon icon-8800" href="#" target="_blank" rel="noopener noreferrer"></a></li>
@@ -169,7 +169,7 @@ require_once '../includes/header.php';
                     <div class="item">
                         <div class="card01">
                             <div class="card01__img">
-                                <img loading="lazy" alt="" decoding="async" src="assets/images/card01-img04.png"/>
+                                <img loading="lazy" alt="" decoding="async" src="https://smartdata.tonytemplates.com/car-repair-service-v4/car1/wp-content/uploads/sites/5/2020/04/card01-img04.png"/>
                                 <ul class="card01__social-icon">
                                     <li><a class="icon icon-59439" href="#" target="_blank" rel="noopener noreferrer"></a></li>
                                     <li><a class="icon icon-8800" href="#" target="_blank" rel="noopener noreferrer"></a></li>
@@ -186,7 +186,7 @@ require_once '../includes/header.php';
                     <div class="item">
                         <div class="card01">
                             <div class="card01__img">
-                                <img loading="lazy" alt="" decoding="async" src="assets/images/card01-img05.png"/>
+                                <img loading="lazy" alt="" decoding="async" src="https://smartdata.tonytemplates.com/car-repair-service-v4/car1/wp-content/uploads/sites/5/2020/04/card01-img05.png"/>
                                 <ul class="card01__social-icon">
                                     <li><a class="icon icon-59439" href="#" target="_blank" rel="noopener noreferrer"></a></li>
                                     <li><a class="icon icon-8800" href="#" target="_blank" rel="noopener noreferrer"></a></li>

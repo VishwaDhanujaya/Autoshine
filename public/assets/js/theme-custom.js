@@ -551,15 +551,84 @@
             PrintElem('modal-coupon')
         })
 
-        // set background image inline
-        if ($('[data-bg]').length) {
-            $('[data-bg]').each(function() {
-                var $this = $(this),
-                    bg = $this.attr('data-bg');
-                $this.css({
-                    'background-image': 'url(' + bg + ')'
+        // Centralized Intersection Observer for Scroll Reveals & Lazy Loading
+        if ('IntersectionObserver' in window) {
+            const genericObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        
+                        // Handle Scroll Reveals
+                        if (element.classList.contains('reveal-effect')) {
+                            element.classList.add('active');
+                            // observer.unobserve(element); // Keep observing if we want repeat animations
+                        }
+                        
+                        // Handle Background Images
+                        if (element.hasAttribute('data-bg')) {
+                            const bg = element.getAttribute('data-bg');
+                            if (bg) {
+                                element.style.backgroundImage = `url(${bg})`;
+                                element.classList.add('lazy-loaded');
+                            }
+                            observer.unobserve(element);
+                        }
+                        
+                        // Handle Standard Images (as enhancement)
+                        if (element.tagName === 'IMG' && element.hasAttribute('data-src')) {
+                            element.src = element.getAttribute('data-src');
+                            element.classList.add('lazy-loaded');
+                            observer.unobserve(element);
+                        }
+                    }
                 });
-            })
+            }, {
+                rootMargin: '0px 0px 100px 0px',
+                threshold: 0.01
+            });
+
+            // Observe elements
+            $('[data-bg], .reveal-effect, img[data-src]').each(function() {
+                const $this = $(this);
+                if ($this.is('[data-bg]')) $this.addClass('lazy-bg');
+                genericObserver.observe(this);
+            });
+        } else {
+            // Fallback for older browsers
+            $('[data-bg]').each(function() {
+                $(this).css('background-image', 'url(' + $(this).attr('data-bg') + ')').addClass('lazy-loaded');
+            });
+            $('.reveal-effect').addClass('active');
+        }
+
+
+
+        // Search Overlay Logic
+        const searchTrigger = document.getElementById('searchTrigger');
+        const searchOverlay = document.getElementById('searchOverlay');
+        const searchClose = document.getElementById('searchClose');
+        const searchInput = document.getElementById('searchInput');
+
+        if (searchTrigger && searchOverlay && searchClose) {
+            searchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                searchOverlay.classList.add('active');
+                setTimeout(() => searchInput.focus(), 300);
+                document.body.style.overflow = 'hidden'; // Prevent scroll
+            });
+
+            searchClose.addEventListener('click', function() {
+                searchOverlay.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scroll
+            });
+
+            // Close on ESC key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+                    searchOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
         }
 
 
