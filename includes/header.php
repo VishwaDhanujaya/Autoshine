@@ -8,6 +8,18 @@ $csrf_token = generateCsrfToken();
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    
+    <?php
+    // Dynamically determine the base URL to ensure assets load correctly on all pages (including 404)
+    $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? "https" : "http";
+    $host = $_SERVER['HTTP_HOST'];
+    // For local XAMPP, this usually includes the subfolder (e.g., /autoshine.lk/public/)
+    $current_script = $_SERVER['SCRIPT_NAME'];
+    $base_dir = preg_replace('/[^\/]+\.php$/', '', $current_script);
+    $base_url = $protocol . "://" . $host . $base_dir;
+    ?>
+    <base href="<?php echo $base_url; ?>">
+
     <link href="assets/images/Auto-Shine-logo.png" rel="shortcut icon" type="image/png">
     <link rel="apple-touch-icon" href="assets/images/Auto-Shine-logo.png">
 

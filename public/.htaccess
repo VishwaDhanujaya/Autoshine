@@ -36,4 +36,4 @@ Options -Indexes
 </IfModule>
 
 # 4. CUSTOM ERROR PAGE
-ErrorDocument 404 /404.php
+ErrorDocument 404 /autoshine.lk/public/404.php

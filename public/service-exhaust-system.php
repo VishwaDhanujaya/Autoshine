@@ -73,7 +73,7 @@ require_once '../includes/header.php';
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <a class="text-icon-sm" href="packages.php">
+                            <a class="text-icon-sm" href="pricing-packages.php">
                                 <div class="icon-wrapper"><span><i class="icon icon-612844"></i><span class="icon-hover"></span></span></div>
                                 <h4 class="title">Coupon</h4>
                                 <p>We like providing our<br/> customers with more than just one way to save</p>

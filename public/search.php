@@ -59,7 +59,7 @@ $search_data = [
     ],
     [
         'title' => 'Mechanical Repair Packages',
-        'url' => 'packages.php',
+        'url' => 'pricing-packages.php',
         'desc' => 'Discounted bundles for common mechanical repairs.',
         'category' => 'Packages'
     ],
@@ -71,7 +71,7 @@ $search_data = [
     ],
     [
         'title' => 'Contact Us',
-        'url' => 'contacts.php',
+        'url' => 'contact-us.php',
         'desc' => 'Get in touch with our team in Nugegoda for appointments.',
         'category' => 'Support'
     ]
@@ -90,69 +90,87 @@ if (!empty($query)) {
 <style>
     .search-results-section {
         padding: 80px 0;
-        background: #fdfdfd;
-        min-height: 60vh;
+        background: url('assets/images/header-photo-bg.jpg') no-repeat center top fixed;
+        background-size: cover;
+        min-height: 80vh;
+        position: relative;
+    }
+    .search-results-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.92);
+        z-index: 1;
+    }
+    .search-results-section .container {
+        position: relative;
+        z-index: 2;
     }
     .search-header {
         margin-bottom: 50px;
         text-align: center;
     }
-    .search-header h1 {
-        font-size: 36px;
-        font-weight: 800;
-        margin-bottom: 10px;
-    }
-    .search-header p {
-        color: #666;
-        font-size: 18px;
-    }
     .result-card {
         background: #fff;
-        border-radius: 15px;
-        padding: 30px;
-        margin-bottom: 25px;
-        border: 1px solid #eee;
-        transition: all 0.3s ease;
+        border-radius: 20px;
+        padding: 35px;
+        margin-bottom: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         display: block;
         text-decoration: none !important;
         color: inherit !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     }
     .result-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
         border-color: #fede00;
     }
     .result-category {
         display: inline-block;
-        background: rgba(254, 222, 0, 0.1);
-        color: #bfa500;
-        padding: 4px 12px;
+        background: #fede00;
+        color: #000;
+        padding: 5px 15px;
         border-radius: 50px;
-        font-size: 12px;
-        font-weight: 700;
+        font-size: 11px;
+        font-weight: 800;
         text-transform: uppercase;
         margin-bottom: 15px;
+        letter-spacing: 0.5px;
     }
     .result-title {
-        font-size: 22px;
-        font-weight: 700;
-        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 12px;
         color: #111;
+        transition: color 0.3s;
+    }
+    .result-card:hover .result-title {
+        color: #bfa500;
     }
     .result-desc {
-        color: #666;
-        line-height: 1.6;
+        color: #555;
+        font-size: 16px;
+        line-height: 1.7;
         margin-bottom: 0;
     }
     .no-results {
         text-align: center;
-        padding: 50px;
+        padding: 80px 40px;
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.05);
     }
     .no-results i {
-        font-size: 60px;
-        color: #ddd;
-        margin-bottom: 20px;
+        font-size: 80px;
+        color: #fede00;
+        margin-bottom: 25px;
         display: block;
+        opacity: 0.8;
     }
 </style>
 
