@@ -1717,7 +1717,7 @@ if (autoshineUI.galleryMoreLink.length) {
                     if (response.status === 'success') {
                         $msgContainer.html('<div class="alert alert-success">' + response.message + '</div>');
                         $form[0].reset();
-                        $('#file-name-display').text('No file selected');
+                        $('#removeAttachment').hide();
                     } else {
                         $msgContainer.html('<div class="alert alert-danger">' + (response.message || 'Submission failed. Please try again.') + '</div>');
                     }
@@ -1764,10 +1764,21 @@ if (autoshineUI.galleryMoreLink.length) {
             });
         });
 
-        // File Input Filename Display
-        $(document).on('change', 'input[name="attachment"]', function() {
-            var fileName = this.files.length ? this.files[0].name : "No file selected";
-            $('#file-name-display').text(fileName);
+        // File Input Handling (Appointment Form)
+        $(document).on('change', '#attachment', function() {
+            if (this.files.length) {
+                $('#removeAttachment').fadeIn();
+            } else {
+                $('#removeAttachment').fadeOut();
+            }
+        });
+
+        $(document).on('click', '#removeAttachment', function() {
+            var fileInput = document.getElementById('attachment');
+            if (fileInput) {
+                fileInput.value = ""; // clear file
+                $(this).fadeOut();
+            }
         });
     });
 

@@ -142,9 +142,11 @@
                             <div class="col-md-12">
                                 <h5>Reference Image / Document <span class="color">(Optional)</span></h5>
                                 <div class="form-group">
-                                    <div style="display: flex; flex-direction: column; gap: 5px;">
-                                        <input class="form-control" name="attachment" type="file" accept="image/*,.pdf,.doc,.docx" style="height: auto; padding: 10px; white-space: nowrap; overflow: visible;"/>
-                                        <small id="file-name-display" class="text-muted">No file selected</small>
+                                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                                        <input class="form-control" id="attachment" name="attachment" type="file" accept="image/*,.pdf,.doc,.docx" style="height: auto; padding: 12px; font-size: 14px;"/>
+                                        <button type="button" id="removeAttachment" style="display: none; align-self: flex-start; color: #a94442; background: #fdf2f2; border: 1px solid #f5c6cb; padding: 6px 14px; border-radius: 4px; font-size: 13px; font-weight: 500; cursor: pointer; margin-top: 5px;">
+                                            <i class="icon-close" style="font-size: 10px; margin-right: 5px;"></i> Remove Attachment
+                                        </button>
                                     </div>
                                     <small class="text-muted">Supported formats: JPG, PNG, PDF, DOC (Max 5MB)</small>
                                 </div>
