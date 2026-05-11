@@ -1138,7 +1138,7 @@ if (autoshineUI.galleryMoreLink.length) {
         */
 
         toggleNavbarMethod(windowWidth);
-        toggleCart('.header-cart', '.header-cart-dropdown');
+
         mobileClickBanner(windowWidth);
         backToTop('.back-to-top');
         if (autoshineUI.stickyHeader.length) {
