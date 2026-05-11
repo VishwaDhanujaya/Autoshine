@@ -12,17 +12,4 @@
             <li class="<?php echo ($current_service == 'service-exhaust-system.php') ? 'active' : ''; ?>"><a href="service-exhaust-system.php">Exhaust System</a></li>
         </ul>
     </div>
-    
-    <!-- Business Hours -->
-    <div class="block-aside">
-        <div class="info-hours-card">
-            <h4 class="info-hours-card__title"><i class="icon icon-clock"></i> Service Hours</h4>
-            <div class="divider divider-xs"></div>
-            <ul class="hours-list">
-                <li><span>Mon - Fri</span> <span class="time">7:00 AM - 6:00 PM</span></li>
-                <li><span>Saturday</span> <span class="time">9:00 AM - 5:00 PM</span></li>
-                <li class="closed"><span>Sunday</span> <span class="time text-danger">Closed</span></li>
-            </ul>
-        </div>
-    </div>
 </div>

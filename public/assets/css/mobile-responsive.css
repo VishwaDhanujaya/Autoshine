@@ -257,7 +257,42 @@
     }
 
     .services-alt .col-xs-6 {
-        padding: 5px !important;
+        padding: 8px !important;
+    }
+
+    /* Make entire service card clickable on mobile */
+    .services-block-alt {
+        position: relative !important;
+        cursor: pointer !important;
+        transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    }
+
+    .services-block-alt:active {
+        transform: scale(0.98) !important;
+    }
+
+    .services-block-alt .image a.image-scale-color:before {
+        content: "" !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 5 !important;
+    }
+
+    .services-block-alt .caption .title a {
+        position: static !important;
+    }
+
+    .services-block-alt .caption .title a:after {
+        content: "" !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        z-index: 10 !important;
     }
 
     /* Tighten grid */
@@ -330,6 +365,23 @@
         font-size: 20px !important;
     }
 
+    h2.h-lg {
+        font-size: 26px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 15px !important;
+        font-weight: 700 !important;
+    }
+
+    h2.h-phone {
+        font-size: 22px !important;
+        margin-top: 10px !important;
+    }
+
+    p.info {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+
     /* ── Content buttons ── */
     .block .btn-border:not(.appointment-btn) {
         width: 100% !important;
@@ -345,6 +397,101 @@
 
     .mm-fullscreen-bg {
         z-index: 99999 !important;
+    }
+
+    /* ── Mobile Navbar Modernization ── */
+    .header-row-unified {
+        padding: 10px 15px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        min-height: 60px !important;
+    }
+
+    .logo-main {
+        max-height: 32px !important;
+        width: auto !important;
+    }
+
+    .header-actions {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+
+    .btn-text-desktop {
+        display: none !important;
+    }
+
+    .btn-text-mobile {
+        display: inline !important;
+    }
+
+    .appointment-btn {
+        padding: 0 15px !important;
+        font-size: 12px !important;
+        height: 34px !important;
+        border-radius: 17px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        background: #fede00 !important;
+        color: #000 !important;
+        font-weight: 700 !important;
+        box-shadow: 0 4px 10px rgba(254, 222, 0, 0.2) !important;
+        order: 1 !important; /* Move Book button to the left of the group */
+    }
+
+    .appointment-btn i {
+        font-size: 14px !important;
+        margin-right: 5px !important;
+    }
+
+    .search-trigger-btn {
+        background: transparent !important;
+        border: none !important;
+        color: #ffffff !important; /* Ensure search icon is white */
+        font-size: 18px !important;
+        padding: 5px !important;
+        display: flex !important;
+        align-items: center !important;
+        order: 2 !important; /* Position between Book and Menu */
+    }
+
+    /* Modern Burger Icon */
+    .navbar-toggle {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 0 0 5px !important;
+        width: 32px !important;
+        height: 32px !important;
+        background: transparent !important;
+        border: none !important;
+        order: 3 !important; /* Move Menu to the far right */
+    }
+
+    .burger-menu {
+        width: 22px;
+        height: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .burger-menu .line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff !important; /* Changed to white for visibility */
+        border-radius: 2px;
+    }
+
+    .burger-menu .line:nth-child(2) {
+        width: 80%;
+        margin-left: auto;
     }
 
     .mm-close-parent {
@@ -406,6 +553,136 @@
 
     .page-title-wrapper .breadcrumbs {
         display: none !important;
+    }
+
+    /* ── About Us Page Fixes ── */
+    #about-story .block {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .wrapper-parallax-left02 {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .wrapper-parallax-left02 .col-img {
+        width: 100% !important;
+        margin-bottom: 25px !important;
+        text-align: center !important;
+    }
+
+    .wrapper-parallax-left02 .col-img img {
+        max-width: 80% !important;
+        height: auto !important;
+    }
+
+    .wrapper-parallax-left02 .col-description {
+        width: 100% !important;
+        padding: 0 15px !important;
+    }
+
+    .about-us .block-title__title,
+    .contacts .block-title__title {
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        margin-bottom: 15px !important;
+        color: #111 !important; /* Dark color for light background pages */
+    }
+
+    .home .block-title__title {
+        font-size: 28px !important;
+        line-height: 1.2 !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        margin-bottom: 15px !important;
+        color: #ffffff !important; /* Default white for dark home sections */
+    }
+
+    /* Home page light sections override */
+    .home #what-we-do .block-title__title,
+    .home #guarantee .block-title__title,
+    .home #why-choose-us .block-title__title,
+    .home #statistics .block-title__title {
+        color: #111 !important;
+    }
+
+    .block-title__title .color {
+        color: #fede00 !important;
+    }
+
+    .title-separator {
+        margin: 15px 0 !important;
+        width: 50px !important;
+        height: 2px !important;
+        background: #fede00 !important;
+    }
+
+    p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        color: #444 !important; /* Default dark for light backgrounds */
+        margin-bottom: 15px !important;
+    }
+
+    /* Override for dark background sections */
+    .bg-1 p,
+    .bg-2 p,
+    .bg-custom-01 p,
+    .text-appointment p,
+    .testimonials-carousel p,
+    .services-block-alt .text {
+        color: #ccc !important; /* Lighter color for dark backgrounds */
+    }
+
+    .subtitle {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        color: #fede00 !important;
+        margin-top: 25px !important;
+        margin-bottom: 10px !important;
+        text-transform: uppercase !important;
+    }
+
+    /* ── Service Subpages Cleanup ── */
+    .service-single {
+        padding-top: 20px !important;
+    }
+
+    .service-single h2 {
+        font-size: 22px !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+        font-weight: 700 !important;
+    }
+
+    .service-single h3 {
+        font-size: 20px !important;
+        margin-top: 25px !important;
+        margin-bottom: 12px !important;
+        font-weight: 700 !important;
+    }
+
+    .service-content p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    .marker-list-sm li {
+        font-size: 14px !important;
+        padding-left: 25px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .content-top {
+        margin-top: 30px !important;
+    }
+
+    .content-top .col-md-6 img {
+        margin-bottom: 20px !important;
+        border-radius: 10px !important;
     }
 
     /* ── Button Fixes (Packages & CTAs) ── */

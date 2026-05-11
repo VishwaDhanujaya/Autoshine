@@ -20,15 +20,8 @@ require_once '../includes/header.php';
         <div class="container">
             <div class="row service-single">
 
-                <!-- Sidebar (reserved for future navigation) -->
-                <div class="col-lg-3 col-md-4">
-                    <?php include_once '../includes/sidebar-services.php'; ?>
-                </div>
-
-                <div class="divider-lg hidden-lg hidden-md hidden-sm"></div>
-
                 <!-- Main service content -->
-                <div class="col-lg-9 col-md-8">
+                <div class="col-lg-12 col-md-12">
                     <img decoding="async" loading="lazy" alt="Service" class="img-responsive" src="assets/images/services-item-img01.jpg"/>
                     <div class="divider-md"></div>
                     <h2>Engine Services</h2>
@@ -63,23 +56,6 @@ require_once '../includes/header.php';
 
                     <p class="content-top-lg">Oil is the lifeblood of your engine. It reduces friction, lessens wear, provides lubrication, forms a seal between the pistons, rings and cylinder walls while helping to cool engine parts. Without the cleaning action of new oil, carbon and varnish buildup would be toxic to the engine. And engine oil even dampens the shock and noise of moving parts.</p>
 
-                    <!-- CTA: Appointment + Coupon -->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a class="text-icon-sm" data-target="#appointmentForm" data-toggle="modal" href="#">
-                                <div class="icon-wrapper"><span><i class="icon icon-calendar"></i><span class="icon-hover"></span></span></div>
-                                <h4 class="title">Appointments</h4>
-                                <p>Perform a search to find a store near you that accepts online appointment requests</p>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a class="text-icon-sm" href="pricing-packages.php">
-                                <div class="icon-wrapper"><span><i class="icon icon-612844"></i><span class="icon-hover"></span></span></div>
-                                <h4 class="title">Coupon</h4>
-                                <p>We like providing our<br/> customers with more than just one way to save</p>
-                            </a>
-                        </div>
-                    </div>
 
                 </div>
             </div>

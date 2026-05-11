@@ -75,10 +75,16 @@
                         <i class="icon icon-search"></i>
                     </button>
                     <a class="appointment-btn" data-target="#appointmentForm" data-toggle="modal" href="#">
-                        <i class="icon-shape icon"></i> <span>Appointment</span>
+                        <i class="icon-shape icon"></i> 
+                        <span class="btn-text-desktop">Appointment</span>
+                        <span class="btn-text-mobile">Book</span>
                     </a>
                     <button class="navbar-toggle" type="button">
-                        <i class="icon icon-lines-menu"></i>
+                        <span class="burger-menu">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </span>
                     </button>
                 </div>
             </div>
