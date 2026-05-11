@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->send();
         echo json_encode(['status' => 'success', 'message' => 'Your message has been sent successfully!']);
     } catch (Exception $e) {
-        echo json_encode(['status' => 'error', 'message' => 'Oops! Something went wrong.']);
+        echo json_encode(['status' => 'error', 'message' => 'Upload failed. Please check your file type/size and try again.']);
     }
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Invalid request method.']);

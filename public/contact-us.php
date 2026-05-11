@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['your-name'])) {
             $status_message = "Your message has been sent successfully!";
             $status_type = "success";
         } catch (Exception $e) {
-            $status_message = "Oops! Something went wrong.";
+            $status_message = "Upload failed. Please check your file type/size and try again.";
             $status_type = "error";
         }
     }

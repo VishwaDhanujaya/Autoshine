@@ -63,10 +63,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body = getEmailTemplate('New Appointment Request', $htmlContent);
         $mail->AltBody = "Name: $name\nPhone: $phone\nEmail: $email\nVehicle: $car ($year)\nRequested Date: $date\nTime: $time";
 
+        // Handle File Attachment
+        if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] != UPLOAD_ERR_NO_FILE) {
+            if ($_FILES['attachment']['error'] !== UPLOAD_ERR_OK) {
+                echo json_encode(['status' => 'error', 'message' => 'Upload failed. Please check your file type/size and try again.']);
+                exit;
+            }
+
+            $file_name = $_FILES['attachment']['name'];
+            $file_tmp  = $_FILES['attachment']['tmp_name'];
+            $file_size = $_FILES['attachment']['size'];
+            $file_ext  = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
+            
+            $allowed_exts = ['jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx'];
+            $max_size     = 5 * 1024 * 1024; // 5MB
+            
+            if (!in_array($file_ext, $allowed_exts)) {
+                echo json_encode(['status' => 'error', 'message' => 'Upload failed: Invalid file type. Only JPG, PNG, PDF, and DOC are allowed.']);
+                exit;
+            }
+            if ($file_size > $max_size) {
+                echo json_encode(['status' => 'error', 'message' => 'Upload failed: File size exceeds 5MB limit.']);
+                exit;
+            }
+            
+            $mail->addAttachment($file_tmp, "Attachment_" . $file_name);
+        }
+
         $mail->send();
         echo json_encode(['status' => 'success', 'message' => 'Appointment request sent successfully!']);
     } catch (Exception $e) {
-        echo json_encode(['status' => 'error', 'message' => 'Oops! Something went wrong.']);
+        echo json_encode(['status' => 'error', 'message' => 'Upload failed. Please check your file type/size and try again.']);
     }
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Invalid request method.']);

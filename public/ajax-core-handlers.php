@@ -73,14 +73,26 @@ function handle_gallery_more() {
         ?>
         <div class="gallery-item vehicle-repair">
             <div class="gallery-item-image">
-                <img loading="lazy" src="assets/images/service-2-bg.jpg" alt="Gallery Image">
-                <a class="hover" href="assets/images/service-2-bg.jpg"><span class="view"></span></a>
+                <img loading="lazy" src="assets/images/gallery-detailing.png" alt="Professional Car Detailing">
+                <a class="hover" href="assets/images/gallery-detailing.png"><span class="view"></span></a>
             </div>
         </div>
         <div class="gallery-item car-maintenance">
             <div class="gallery-item-image">
-                <img loading="lazy" src="assets/images/service-3-bg.jpg" alt="Gallery Image">
-                <a class="hover" href="assets/images/service-3-bg.jpg"><span class="view"></span></a>
+                <img loading="lazy" src="assets/images/gallery-engine.png" alt="Engine Repair Service">
+                <a class="hover" href="assets/images/gallery-engine.png"><span class="view"></span></a>
+            </div>
+        </div>
+        <div class="gallery-item vehicle-repair">
+            <div class="gallery-item-image">
+                <img loading="lazy" src="assets/images/gallery-painting.png" alt="Professional Paint Booth">
+                <a class="hover" href="assets/images/gallery-painting.png"><span class="view"></span></a>
+            </div>
+        </div>
+        <div class="gallery-item car-maintenance">
+            <div class="gallery-item-image">
+                <img loading="lazy" src="assets/images/gallery-workshop.png" alt="Autoshine Workshop View">
+                <a class="hover" href="assets/images/gallery-workshop.png"><span class="view"></span></a>
             </div>
         </div>
         <?php

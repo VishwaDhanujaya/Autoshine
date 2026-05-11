@@ -87,7 +87,7 @@
 
                     <div class="divider divider-sm"></div>
                     
-                    <form action="#" id="appointment-form-element" class="contact-form form-horizontal form-default" method="post">
+                    <form action="#" id="appointment-form-element" class="contact-form form-horizontal form-default" method="post" enctype="multipart/form-data">
                         <!-- CSRF Token -->
                         <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
                         
@@ -134,6 +134,19 @@
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control timepicker" name="time" placeholder="10 : 00" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row" style="margin-top: 15px;">
+                            <div class="col-md-12">
+                                <h5>Reference Image / Document <span class="color">(Optional)</span></h5>
+                                <div class="form-group">
+                                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                                        <input class="form-control" name="attachment" type="file" accept="image/*,.pdf,.doc,.docx" style="height: auto; padding: 10px; white-space: nowrap; overflow: visible;"/>
+                                        <small id="file-name-display" class="text-muted">No file selected</small>
+                                    </div>
+                                    <small class="text-muted">Supported formats: JPG, PNG, PDF, DOC (Max 5MB)</small>
                                 </div>
                             </div>
                         </div>

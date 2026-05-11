@@ -707,7 +707,8 @@
 
         // image popup
         if (autoshineUI.isotopeGallery.length) {
-            autoshineUI.isotopeGallery.find('a.hover').magnificPopup({
+            autoshineUI.isotopeGallery.magnificPopup({
+                delegate: 'a.hover',
                 type: 'image',
                 gallery: {
                     enabled: true
@@ -1708,18 +1709,25 @@ if (autoshineUI.galleryMoreLink.length) {
             $.ajax({
                 url: 'ajax-schedule-appointment.php',
                 type: 'POST',
-                data: $form.serialize(),
+                data: new FormData(this),
+                processData: false,
+                contentType: false,
                 dataType: 'json',
                 success: function(response) {
                     if (response.status === 'success') {
                         $msgContainer.html('<div class="alert alert-success">' + response.message + '</div>');
                         $form[0].reset();
+                        $('#file-name-display').text('No file selected');
                     } else {
-                        $msgContainer.html('<div class="alert alert-danger">' + response.message + '</div>');
+                        $msgContainer.html('<div class="alert alert-danger">' + (response.message || 'Submission failed. Please try again.') + '</div>');
                     }
                 },
-                error: function() {
-                    $msgContainer.html('<div class="alert alert-danger">An error occurred. Please try again.</div>');
+                error: function(jqXHR) {
+                    var errorMsg = 'An error occurred. Please check your connection and try again.';
+                    if (jqXHR.responseJSON && jqXHR.responseJSON.message) {
+                        errorMsg = jqXHR.responseJSON.message;
+                    }
+                    $msgContainer.html('<div class="alert alert-danger">' + errorMsg + '</div>');
                 },
                 complete: function() {
                     $submitBtn.prop('disabled', false).removeClass('loading');
@@ -1754,6 +1762,12 @@ if (autoshineUI.galleryMoreLink.length) {
                     $submitBtn.prop('disabled', false).html(originalBtnText);
                 }
             });
+        });
+
+        // File Input Filename Display
+        $(document).on('change', 'input[name="attachment"]', function() {
+            var fileName = this.files.length ? this.files[0].name : "No file selected";
+            $('#file-name-display').text(fileName);
         });
     });
 

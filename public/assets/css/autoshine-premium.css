@@ -919,10 +919,10 @@ html {
 
 /* Guarantee Box Glass */
 .box01 {
-    background: rgba(255, 255, 255, 0.03) !important;
+    background: rgba(255, 255, 255, 0.7) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
     border-radius: 20px !important;
     padding: 30px !important;
     height: 100%;
@@ -940,21 +940,21 @@ html {
 }
 
 .box01__title {
-    color: #fff !important;
+    color: #111 !important;
     font-weight: 700 !important;
 }
 
 .box01 p {
-    color: #aaa !important;
+    color: #444 !important;
 }
 
 /* Why Choose Us Glass */
 .text-icon {
-    background: rgba(255, 255, 255, 0.03) !important;
+    background: rgba(255, 255, 255, 0.7) !important;
     backdrop-filter: blur(10px);
     padding: 40px 20px !important;
     border-radius: 20px !important;
-    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
     transition: all 0.3s ease;
 }
 
@@ -964,12 +964,43 @@ html {
     border-color: #fede00 !important;
 }
 
+.text-icon .icon-wrapper span i {
+    color: #000 !important;
+}
+
+/* ── Contact Page Spacing & Polish ── */
+@media (min-width: 768px) {
+    .info02-wrapper {
+        padding-left: 40px !important;
+    }
+    .box-wrapper {
+        padding-right: 40px !important;
+    }
+}
+
+.info02 {
+    margin-bottom: 30px !important;
+}
+
+.info02__title {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    margin-bottom: 5px !important;
+    color: #111 !important;
+}
+
+.info02 address {
+    font-style: normal !important;
+    line-height: 1.6 !important;
+    color: #444 !important;
+}
+
 .text-icon .title {
-    color: #fff !important;
+    color: #111 !important;
 }
 
 .text-icon .text {
-    color: #999 !important;
+    color: #444 !important;
 }
 
 @media (max-width: 991px) {
@@ -1283,35 +1314,94 @@ html {
 
 /* ── Print Settings ── */
 @media print {
-    body * {
+    /* Hide everything except the print container */
+    body > *:not(#print-only-container) {
         display: none !important;
     }
-    #print-only-container, #print-only-container * {
-        display: block !important;
-    }
     #print-only-container {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        padding: 20px;
+        display: block !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        background: #fff !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
+
+    /* Clean B&W Package Style */
     .promo01 {
-        border: 2px dashed #000 !important;
+        border: 2px solid #000 !important;
         margin: 0 auto !important;
-        max-width: 600px !important;
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
+        max-width: 500px !important; /* Scale to fit A4 neatly */
+        background: #fff !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        overflow: hidden !important;
+        -webkit-print-color-adjust: economy !important;
+        print-color-adjust: economy !important;
     }
+
     .promo01-header {
-        background-color: #ffc513 !important;
+        background-color: #f0f0f0 !important; /* Light grey for subtle separation */
+        border-bottom: 2px solid #000 !important;
+        color: #000 !important;
+        padding: 20px !important;
+        text-align: center !important;
     }
+
+    .promo01-header .text-02 {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+        color: #000 !important;
+        text-transform: uppercase !important;
+    }
+
     .promo01-content {
-        background-color: #2d2d2d !important;
-        color: #fff !important;
+        background-color: #fff !important;
+        color: #000 !important;
+        padding: 30px !important;
+        text-align: center !important;
     }
+
+    .promo01-content .text-01 {
+        font-size: 26px !important;
+        font-weight: 800 !important;
+        color: #000 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .promo01-content .text-02 {
+        font-size: 15px !important;
+        color: #222 !important;
+        line-height: 1.5 !important;
+    }
+
+    .promo01 .icon-separator {
+        margin-bottom: 10px !important;
+    }
+
+    .promo01 .icon-separator i {
+        color: #000 !important;
+        font-size: 35px !important;
+    }
+
+    /* Force all variants to consistent B&W */
+    .promo01.colors-cheme-02 .promo01-header,
     .promo01.colors-cheme-02 .promo01-content {
         background-color: #fff !important;
-        color: #333 !important;
+        color: #000 !important;
+        border: none !important;
+    }
+
+    /* Remove interactive UI from print */
+    .btn, .print-promo, .slick-arrow, .slick-dots {
+        display: none !important;
+    }
+
+    @page {
+        size: A4;
+        margin: 20mm;
     }
 }
