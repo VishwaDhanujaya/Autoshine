@@ -507,6 +507,11 @@
         padding-bottom: 0 !important;
         padding-top: 15px !important;
     }
+
+    /* Hide header top info bar on mobile/tablet */
+    .header-top-bar {
+        display: none !important;
+    }
 }
 
 /* ── Global Gallery Fixes (PC & Mobile) ── */

@@ -5,8 +5,8 @@ Options -Indexes
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
-    # Block access to includes, vendor, and composer files
-    RewriteRule ^(includes|vendor|composer\.(json|lock))($|/) - [F,L,NC]
+    # Block access to includes, vendor, and sensitive files
+    RewriteRule ^(includes|vendor|composer\.(json|lock)|\.env|\.git)($|/) - [F,L,NC]
 </IfModule>
 
 # 3. PERFORMANCE: Browser Caching (Leverage Browser Caching)

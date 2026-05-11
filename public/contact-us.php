@@ -118,7 +118,7 @@ require_once '../includes/header.php';
                                 </div>
                             <?php endif; ?>
 
-                            <form action="contacts.php" id="contact-form-element" class="contact-form" method="post">
+                            <form action="contact-us.php" id="contact-form-element" class="contact-form" method="post">
                                 <!-- CSRF Token -->
                                 <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
                                 

@@ -27,7 +27,7 @@
 <!-- Site Header -->
 <header class="page-header page-header-1 sticky">
     <!-- Info Bar -->
-    <div class="header-top-bar">
+    <div class="header-top-bar hidden-xs hidden-sm">
         <div class="container-fluid px-lg-5">
             <div class="row">
                 <div class="col-md-12">
@@ -63,8 +63,8 @@
                             <li class="<?php echo ($current_page == 'about-us.php') ? 'current-menu-item' : ''; ?>"><a href="about-us.php">About Us</a></li>
                             <li class="<?php echo ($current_page == 'services.php' || strpos($current_page, 'service-') === 0) ? 'current-menu-item' : ''; ?>"><a href="services.php">Services</a></li>
                             <li class="<?php echo ($current_page == 'gallery.php') ? 'current-menu-item' : ''; ?>"><a href="gallery.php">Gallery</a></li>
-                            <li class="<?php echo ($current_page == 'packages.php') ? 'current-menu-item' : ''; ?>"><a href="packages.php">Packages</a></li>
-                            <li class="<?php echo ($current_page == 'contacts.php') ? 'current-menu-item' : ''; ?>"><a href="contacts.php">Contact Us</a></li>
+                            <li class="<?php echo ($current_page == 'pricing-packages.php') ? 'current-menu-item' : ''; ?>"><a href="pricing-packages.php">Packages</a></li>
+                            <li class="<?php echo ($current_page == 'contact-us.php') ? 'current-menu-item' : ''; ?>"><a href="contact-us.php">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

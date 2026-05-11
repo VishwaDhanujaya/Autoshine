@@ -4,7 +4,7 @@
 
     var $document = $(document),
         $window = $(window),
-        plugins = {
+        autoshineUI = {
             mainSlider: $('#mainSlider'),
             slideNav: $('#slide-nav'),
             categoryCarousel: $('.category-carousel'),
@@ -119,8 +119,8 @@
      --------------------------------------------- */
 
     $(window).load(function() {
-        if (plugins.jsComparingImg.length) {
-            plugins.jsComparingImg.twentytwenty();
+        if (autoshineUI.jsComparingImg.length && $.isFunction($.fn.twentytwenty)) {
+            autoshineUI.jsComparingImg.twentytwenty();
         };
     });
 
@@ -131,7 +131,7 @@
         $('body,html').animate({ scrollTop: top }, 1500);
     });
 
-    if (plugins.jsFaqAccordion.length) {
+    if (autoshineUI.jsFaqAccordion.length) {
         $('body').on('click', '.faq-accordion .faq__title', function(e) {
             if ($(this).closest('.faq__item').hasClass('active')) {
                 $(this).closest('.faq__item').removeClass('active');
@@ -205,16 +205,16 @@
             })
         }
 
-        if (plugins.jsSlickInit.length) {
-            plugins.jsSlickInit.slick({
+        if (autoshineUI.jsSlickInit.length) {
+            autoshineUI.jsSlickInit.slick({
                 infinite: true,
                 centerMode: true,
                 centerPadding: '0px'
             });
         };
 
-        if (plugins.jsPopup.length) {
-            plugins.jsPopup.magnificPopup({
+        if (autoshineUI.jsPopup.length) {
+            autoshineUI.jsPopup.magnificPopup({
                // disableOn: 700,
                 type: 'iframe',
                 mainClass: 'mfp-fade',
@@ -259,8 +259,8 @@
 
 
         // scroll tabs
-        if (plugins.scrollTabs.length) {
-            plugins.scrollTabs.scrollingTabs({
+        if (autoshineUI.scrollTabs.length) {
+            autoshineUI.scrollTabs.scrollingTabs({
                 disableScrollArrowsOnFullyScrolled: true
             });
         }
@@ -488,8 +488,8 @@
             e.preventDefault();
         })
 
-        if (plugins.getQuoteLink.length) {
-            plugins.getQuoteLink.on('click', function(e) {
+        if (autoshineUI.getQuoteLink.length) {
+            autoshineUI.getQuoteLink.on('click', function(e) {
                 var $popup = $(this).next();
                 var diff = $(window).width() - $popup.offset().left - $popup.width();
                 if (diff < 0) {
@@ -635,9 +635,9 @@
         // main slider
         $(window).load(function() {
         // $(document).ready(function() {
-            if (plugins.mainSlider.length) {
+            if (autoshineUI.mainSlider.length) {
                 if (!$('#mainSlider').hasClass('slick-initialized')) {
-                    var $el = plugins.mainSlider;
+                    var $el = autoshineUI.mainSlider;
                     $el.on('init', function(e, slick) {
                         var $firstAnimatingElements = $('div.slide:first-child').find('[data-animation]');
                         doAnimations($firstAnimatingElements);
@@ -654,15 +654,15 @@
                         doAnimations($animatingElements);
                     });
                     $el.slick({
-                        arrows: JSON.parse(ajax_slickslider.arrows),
-                        dots: JSON.parse(ajax_slickslider.dots),
-                        autoplay: JSON.parse(ajax_slickslider.autoplay),
-                        autoplaySpeed: parseInt(ajax_slickslider.autoplay_speed),
-                        fade: JSON.parse(ajax_slickslider.fade),
-                        speed: parseInt(ajax_slickslider.speed),
-                        rtl: plugins.rtltrue,
-                        pauseOnHover: JSON.parse(ajax_slickslider.pause_on_hover),
-                        pauseOnDotsHover: JSON.parse(ajax_slickslider.pause_on_dots_hover),
+                        arrows: JSON.parse(autoshineSliderSettings.arrows),
+                        dots: JSON.parse(autoshineSliderSettings.dots),
+                        autoplay: JSON.parse(autoshineSliderSettings.autoplay),
+                        autoplaySpeed: parseInt(autoshineSliderSettings.autoplay_speed),
+                        fade: JSON.parse(autoshineSliderSettings.fade),
+                        speed: parseInt(autoshineSliderSettings.speed),
+                        rtl: autoshineUI.rtltrue,
+                        pauseOnHover: JSON.parse(autoshineSliderSettings.pause_on_hover),
+                        pauseOnDotsHover: JSON.parse(autoshineSliderSettings.pause_on_dots_hover),
                         responsive: [{
                             breakpoint: 1199,
                             settings: {
@@ -674,9 +674,9 @@
             }
         });
         // number counter
-        if (plugins.counterBlock.length) {
-            plugins.counterBlock.waypoint(function() {
-                $('.number > span.count', plugins.counterBlock).each(count);
+        if (autoshineUI.counterBlock.length) {
+            autoshineUI.counterBlock.waypoint(function() {
+                $('.number > span.count', autoshineUI.counterBlock).each(count);
                 this.destroy();
             }, {
                 triggerOnce: true,
@@ -706,8 +706,8 @@
         };
 
         // image popup
-        if (plugins.isotopeGallery.length) {
-            plugins.isotopeGallery.find('a.hover').magnificPopup({
+        if (autoshineUI.isotopeGallery.length) {
+            autoshineUI.isotopeGallery.find('a.hover').magnificPopup({
                 type: 'image',
                 gallery: {
                     enabled: true
@@ -717,8 +717,8 @@
 
         // gallery isotope
         $(window).load(function() {
-            if (plugins.isotopeGallery.length) {
-                var $gallery = plugins.isotopeGallery;
+            if (autoshineUI.isotopeGallery.length) {
+                var $gallery = autoshineUI.isotopeGallery;
                 $gallery.imagesLoaded(function() {
                     $gallery.isotope({
                         itemSelector: '.gallery-item',
@@ -733,8 +733,8 @@
             }
         });
 
-        if (plugins.pricingCarousel.length) {
-            plugins.pricingCarousel.slick({
+        if (autoshineUI.pricingCarousel.length) {
+            autoshineUI.pricingCarousel.slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
@@ -764,8 +764,8 @@
         }
         
         // Generic Slick Initialization for .js-slick-init
-        if (plugins.jsSlickInit.length) {
-            plugins.jsSlickInit.each(function() {
+        if (autoshineUI.jsSlickInit.length) {
+            autoshineUI.jsSlickInit.each(function() {
                 var $this = $(this);
                 if (!$this.hasClass('slick-initialized')) {
                     var config = $this.data('slick') || {};
@@ -775,8 +775,8 @@
         }
 
 
-        if (plugins.jsPricingCarousel.length) {
-            plugins.jsPricingCarousel.slick({
+        if (autoshineUI.jsPricingCarousel.length) {
+            autoshineUI.jsPricingCarousel.slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
@@ -810,10 +810,10 @@
             $.ajax({
                 type: "POST",
                 dataType: "html",
-                url: ajax_object.ajax_url,
+                url: autoshineConfig.ajax_url,
                 data: {
                     action: 'coupon_popup_ajax',
-                    security: ajax_object.ajax_nonce_coupon,
+                    security: autoshineConfig.csrf_token,
                     post_id: post_id
                 },
                 success: function(data) {
@@ -831,8 +831,8 @@
 
         // testimonial load more
         var testimonialPage = 2;
-        if (plugins.testimonialMoreLink.length) {
-            var $testimonialMoreLink = plugins.testimonialMoreLink,
+        if (autoshineUI.testimonialMoreLink.length) {
+            var $testimonialMoreLink = autoshineUI.testimonialMoreLink,
                 $testimonialPreload = $('#testimonialPreload'),
                 $testimonialLoader = $('#moreLoader');
             $testimonialMoreLink.on('click', function() {
@@ -843,10 +843,10 @@
                 $.ajax({
                     type: "POST",
                     dataType: "html",
-                    url: ajax_object.ajax_url,
+                    url: autoshineConfig.ajax_url,
                     data: {
                         action: 'testimonial_more_post_ajax',
-                        security: ajax_object.ajax_nonce_testimonial,
+                        security: autoshineConfig.csrf_token,
                         post_per_page: per_page,
                         paged: testimonialPage,
                         grid_style: grid_style
@@ -854,10 +854,10 @@
                     success: function(data) {
                         $testimonialPreload.append(data);
                         $testimonialLoader.removeClass('visible');
-                        if (plugins.postGallery.length) {
+                        if (autoshineUI.postGallery.length) {
                             $(' > div', $testimonialPreload).each(function() {
                                 var $item = $(this);
-                                plugins.postGallery.append($item).isotope('appended', $item);
+                                autoshineUI.postGallery.append($item).isotope('appended', $item);
                             });
                         }
                         var length = document.querySelectorAll('.testimonial-wrapper .col-item').length;
@@ -881,8 +881,8 @@
 
         var galleryPage = 2;
 
-if (plugins.galleryMoreLink.length) {
-  var $galleryMoreLink = plugins.galleryMoreLink,
+if (autoshineUI.galleryMoreLink.length) {
+  var $galleryMoreLink = autoshineUI.galleryMoreLink,
       $galleryPreload = $('#galleryPreload'),
       $gallerymoreLoader = $('#gallerymoreLoader');
 
@@ -897,10 +897,10 @@ if (plugins.galleryMoreLink.length) {
     $.ajax({
       type: "POST",
       dataType: "html",
-      url: ajax_object.ajax_url,
+      url: autoshineConfig.ajax_url,
       data: {
         action: 'gallery_more_post_ajax',
-        security: ajax_object.ajax_nonce_gallery,
+        security: autoshineConfig.csrf_token,
         post_per_page: per_page,
         paged: galleryPage,
         grid_style: grid_style
@@ -912,15 +912,17 @@ if (plugins.galleryMoreLink.length) {
         $('#gallery').append($newItems);
 
         // Isotope layout for new items
-        if (plugins.isotopeGallery.length) {
+        if (autoshineUI.isotopeGallery.length) {
           $newItems.imagesLoaded(function() {
-            plugins.isotopeGallery
+            autoshineUI.isotopeGallery
               .append($newItems)
               .isotope('appended', $newItems)
               .isotope('layout');
 
             // Re-init twentytwenty plugin for any new images
-            $('.js-comparing-img').twentytwenty();
+            if ($.isFunction($.fn.twentytwenty)) {
+              $('.js-comparing-img').twentytwenty();
+            }
           });
         }
 
@@ -951,17 +953,17 @@ if (plugins.galleryMoreLink.length) {
 
         // Banner service carousel
         /*
-        if (plugins.servicesCarousel.length) {
+        if (autoshineUI.servicesCarousel.length) {
             if (windowWidth < 768) {
-                plugins.servicesCarousel.slick({
+                autoshineUI.servicesCarousel.slick({
                     mobileFirst: false,
-                   // slidesToShow: parseInt(ajax_banner.slides_to_show),
-                    slidesToScroll: JSON.parse(ajax_banner.slides_to_scroll),
-                    infinite: JSON.parse(ajax_banner.infinite),
-                    dots: JSON.parse(ajax_banner.dots),
-                    arrows: JSON.parse(ajax_banner.arrows),
-                    autoplay: JSON.parse(ajax_banner.autoplay),
-                    rtl: plugins.rtltrue,
+                    // slidesToShow: parseInt(autoshineConfig.banner_settings.slides_to_show),
+                    slidesToScroll: JSON.parse(autoshineConfig.banner_settings.slides_to_scroll),
+                    infinite: JSON.parse(autoshineConfig.banner_settings.infinite),
+                    dots: JSON.parse(autoshineConfig.banner_settings.dots),
+                    arrows: JSON.parse(autoshineConfig.banner_settings.arrows),
+                    autoplay: JSON.parse(autoshineConfig.banner_settings.autoplay),
+                    rtl: autoshineUI.rtltrue,
                     responsive: [{
                         breakpoint: 767,
                         settings: {
@@ -979,8 +981,8 @@ if (plugins.galleryMoreLink.length) {
         */
 
         // products carousel
-        if (plugins.prdCarousel.length) {
-            plugins.prdCarousel.slick({
+        if (autoshineUI.prdCarousel.length) {
+            autoshineUI.prdCarousel.slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
@@ -1017,25 +1019,25 @@ if (plugins.galleryMoreLink.length) {
         }
 
         // testimonials carousel
-        if (plugins.testimonialsCarousel.length) {
-            plugins.testimonialsCarousel.slick({
+        if (autoshineUI.testimonialsCarousel.length) {
+            autoshineUI.testimonialsCarousel.slick({
                 mobileFirst: false,
-                slidesToShow: parseInt(ajax_testiomonial.slides_to_show),
-                slidesToScroll: JSON.parse(ajax_testiomonial.slides_to_scroll),
-                infinite: JSON.parse(ajax_testiomonial.infinite),
-                autoplay: JSON.parse(ajax_testiomonial.autoplay),
-                autoplaySpeed: parseInt(ajax_testiomonial.autoplay_speed),
-                arrows: JSON.parse(ajax_testiomonial.arrows),
-                rtl: plugins.rtltrue,
-                dots: JSON.parse(ajax_testiomonial.dots),
-                fade: JSON.parse(ajax_testiomonial.fade),
+                slidesToShow: parseInt(autoshineTestimonialSettings.slides_to_show),
+                slidesToScroll: JSON.parse(autoshineTestimonialSettings.slides_to_scroll),
+                infinite: JSON.parse(autoshineTestimonialSettings.infinite),
+                autoplay: JSON.parse(autoshineTestimonialSettings.autoplay),
+                autoplaySpeed: parseInt(autoshineTestimonialSettings.autoplay_speed),
+                arrows: JSON.parse(autoshineTestimonialSettings.arrows),
+                rtl: autoshineUI.rtltrue,
+                dots: JSON.parse(autoshineTestimonialSettings.dots),
+                fade: JSON.parse(autoshineTestimonialSettings.fade),
                 cssEase: 'linear'
             });
         }
 
 
-        if (plugins.jsNewsbox.length) {
-            plugins.jsNewsbox.slick({
+        if (autoshineUI.jsNewsbox.length) {
+            autoshineUI.jsNewsbox.slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
@@ -1057,17 +1059,17 @@ if (plugins.galleryMoreLink.length) {
         }
 
         // person carousel (team)
-        if (plugins.personCarousel.length) {
-            plugins.personCarousel.slick({
+        if (autoshineUI.personCarousel.length) {
+            autoshineUI.personCarousel.slick({
                 mobileFirst: false,
-                slidesToShow: parseInt(ajax_team.slides_to_show),
-                slidesToScroll: JSON.parse(ajax_team.slides_to_scroll),
-                infinite: JSON.parse(ajax_team.infinite),
-                autoplay: JSON.parse(ajax_team.autoplay),
-                rtl: plugins.rtltrue,
-                autoplaySpeed: parseInt(ajax_team.autoplay_speed),
-                arrows: JSON.parse(ajax_team.arrows),
-                dots: JSON.parse(ajax_team.dots),
+                slidesToShow: parseInt(autoshineConfig.team_settings.slides_to_show),
+                slidesToScroll: JSON.parse(autoshineConfig.team_settings.slides_to_scroll),
+                infinite: JSON.parse(autoshineConfig.team_settings.infinite),
+                autoplay: JSON.parse(autoshineConfig.team_settings.autoplay),
+                rtl: autoshineUI.rtltrue,
+                autoplaySpeed: parseInt(autoshineConfig.team_settings.autoplay_speed),
+                arrows: JSON.parse(autoshineConfig.team_settings.arrows),
+                dots: JSON.parse(autoshineConfig.team_settings.dots),
                 responsive: [{
                     breakpoint: 1199,
                     settings: {
@@ -1083,14 +1085,14 @@ if (plugins.galleryMoreLink.length) {
         }
 
         // category carousel
-        if (plugins.categoryCarousel.length) {
-            plugins.categoryCarousel.slick({
+        if (autoshineUI.categoryCarousel.length) {
+            autoshineUI.categoryCarousel.slick({
                 mobileFirst: false,
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
                 arrows: false,
-                rtl: plugins.rtltrue,
+                rtl: autoshineUI.rtltrue,
                 dots: true,
                 responsive: [{
                     breakpoint: 991,
@@ -1112,14 +1114,14 @@ if (plugins.galleryMoreLink.length) {
         }
 
         // post carousel
-        if (plugins.postCarousel.length) {
-            plugins.postCarousel.slick({
+        if (autoshineUI.postCarousel.length) {
+            autoshineUI.postCarousel.slick({
                 mobileFirst: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
                 autoplay: false,
-                rtl: plugins.rtltrue,
+                rtl: autoshineUI.rtltrue,
                 autoplaySpeed: 2500,
                 arrows: true,
                 dots: false
@@ -1130,8 +1132,8 @@ if (plugins.galleryMoreLink.length) {
 
         // lazy loading effect
         /*
-        if (plugins.animation.length) {
-            onScrollInit(plugins.animation, windowWidth);
+        if (autoshineUI.animation.length) {
+            onScrollInit(autoshineUI.animation, windowWidth);
         }
         */
 
@@ -1139,11 +1141,11 @@ if (plugins.galleryMoreLink.length) {
         toggleCart('.header-cart', '.header-cart-dropdown');
         mobileClickBanner(windowWidth);
         backToTop('.back-to-top');
-        if (plugins.stickyHeader.length) {
-            $(plugins.stickyHeader).stickyHeader();
+        if (autoshineUI.stickyHeader.length) {
+            $(autoshineUI.stickyHeader).stickyHeader();
         }
-        if (plugins.dropMenu.length) {
-            $(plugins.stickyHeader).dropMenu();
+        if (autoshineUI.dropMenu.length) {
+            $(autoshineUI.stickyHeader).dropMenu();
         }
         // Resize window events
         $window.resize(function() {
@@ -1169,7 +1171,7 @@ if (plugins.galleryMoreLink.length) {
 
             /*
 			if (windowWidth > 768 && !$('body').hasClass('touch')) {
-				if (plugins.servicesCarousel.length) {
+				if (autoshineUI.servicesCarousel.length) {
 					equalHeight(".text-icon-carousel > div", ".title", ".text");
 				}
 			}
@@ -1186,16 +1188,16 @@ if (plugins.galleryMoreLink.length) {
         var windowWidth = window.innerWidth || $window.width();
         startCarousel();
         // remove preloader
-        $('#loader-wrapper').fadeOut(parseInt(ajax_object.site_preloader_timeout));
+        $('#loader-wrapper').fadeOut(parseInt(autoshineConfig.site_preloader_timeout));
         /*
         if (windowWidth > 768 && !$('body').hasClass('touch')) {
-            if (plugins.servicesCarousel.length) {
+            if (autoshineUI.servicesCarousel.length) {
                 equalHeight(".text-icon-carousel > div", ".title", ".text");
             }
         }
        
         if (windowWidth > 480 && !$('body').hasClass('touch')) {
-            if (plugins.servicesBlockAlt.length) {
+            if (autoshineUI.servicesBlockAlt.length) {
                 equalHeight(".services-block-alt", ".title", ".text");
             }
         }
@@ -1209,9 +1211,9 @@ if (plugins.galleryMoreLink.length) {
             options = $.extend({}, options || {}, $this.data('countToOptions') || {});
             $this.countTo(options);
         }
-        if (plugins.counter.length) {
-            plugins.counter.waypoint(function() {
-                $('.number > span', plugins.counter).each(count);
+        if (autoshineUI.counter.length) {
+            autoshineUI.counter.waypoint(function() {
+                $('.number > span', autoshineUI.counter).each(count);
             }, {
                 triggerOnce: true,
                 offset: '80%'
@@ -1315,8 +1317,8 @@ if (plugins.galleryMoreLink.length) {
         }
     }
 
-    if (plugins.stickyHeader.length) {
-        $(plugins.stickyHeader).stickyHeader();
+    if (autoshineUI.stickyHeader.length) {
+        $(autoshineUI.stickyHeader).stickyHeader();
     }
 
     // Time Out Resize
@@ -1386,7 +1388,7 @@ if (plugins.galleryMoreLink.length) {
                 autoplay: true,
                 autoplaySpeed: 2500,
                 arrows: false,
-                rtl: plugins.rtltrue,
+                rtl: autoshineUI.rtltrue,
                 dots: true,
                 responsive: [{
                     breakpoint: breakpoint,
@@ -1397,19 +1399,19 @@ if (plugins.galleryMoreLink.length) {
     }
 
     function startCarousel() {
-        if (plugins.servicesAltCarousel.length) {
-            slickMobile(plugins.servicesAltCarousel, 480, 1, 1);
+        if (autoshineUI.servicesAltCarousel.length) {
+            slickMobile(autoshineUI.servicesAltCarousel, 480, 1, 1);
         }
         /*
-        if (plugins.servicesCarousel.length) {
-            slickMobile(plugins.servicesCarousel, 767, 1, 1);
+        if (autoshineUI.servicesCarousel.length) {
+            slickMobile(autoshineUI.servicesCarousel, 767, 1, 1);
         }
         */
-        if (plugins.howWorksCarousel.length) {
-            slickMobile(plugins.howWorksCarousel, 767, 1, 1);
+        if (autoshineUI.howWorksCarousel.length) {
+            slickMobile(autoshineUI.howWorksCarousel, 767, 1, 1);
         }
-        if (plugins.jsPromo02Carousel.length) {
-            slickMobile(plugins.jsPromo02Carousel, 767, 1, 1);
+        if (autoshineUI.jsPromo02Carousel.length) {
+            slickMobile(autoshineUI.jsPromo02Carousel, 767, 1, 1);
         }
     }
 
@@ -1597,184 +1599,63 @@ if (plugins.galleryMoreLink.length) {
         }
     }
 
+
     $('.side-block.widget ul').addClass('category-list');
     $('.side-block.widget .tagcloud').addClass('tags-list');
-    $('.price_slider_amount button').removeClass('button');
-    $('.price_slider_amount button').addClass('btn btn-sm btn-border btn-invert');
-    $('.woocommerce-pagination').addClass('text-center pagination-wrapper');
-    // $('.woocommerce-pagination ul').removeClass('page-numbers');
-    $('.woocommerce-pagination ul').addClass('pagination');
 
-    $(".cart .input-text.qty.text").spinner({
-        spin: function(event, ui) {
-            $('.woocommerce-cart-form button[name="update_cart"]').prop('disabled', false);
-        }
-    });
+    function car_repair_services_blog_load_more() {
+        var pageNumber = 1;
+        $(document).on("click", '.view-more-post.autoshine-load-more.blog-grid', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var post_per_load = $this.data('post-per-load');
+            var $loader = $('.autoshine-loader-img');
+            
+            $loader.show();
+            $this.hide();
+            pageNumber++;
 
-    $(document.body).on('updated_cart_totals', function() {
-        $(".cart .input-text.qty.text").spinner({
-            spin: function(event, ui) {
-                $('.woocommerce-cart-form button[name="update_cart"]').prop('disabled', false);
-            }
-        });
-    });
-
-    $('.header-cart').on('click', '.prd-sm-delete', function() {
-        $(this).closest('.prd-sm-item').append('<div class="loader-cart-delete"><img src="' + ajax_object.loader_img + '"></div>');
-        var id = $(this).data('product_id')
-        var qty = $(this).data('qty')
-        $.ajax({
-            type: "POST",
-            url: ajax_object.ajax_url,
-            data: {
-                action: 'remove_item_from_cart',
-                product_id: id,
-                security: ajax_object.ajax_nonce_cart,
-            },
-            success: function(res) {
-                if (res.fragments) {
-                    $('.cart-contents').replaceWith(res.fragments['a.cart-contents'])
-                    $('.header-cart-dropdown').replaceWith(res.fragments['div.header-cart-dropdown'])
+            $.ajax({
+                type: "POST",
+                url: autoshineConfig.ajax_url,
+                data: {
+                    action: 'car_repair_services_more_post_ajax',
+                    post_per_load: post_per_load,
+                    pageNumber: pageNumber,
+                    security: autoshineConfig.csrf_token,
+                },
+                success: function(data) {
+                    var obj = JSON.parse(data);
+                    $loader.hide();
+                    
+                    if (obj.count !== 'blank') {
+                        $this.show();
+                        $('#postPreload').append(obj.html);
+                        
+                        if (autoshineUI.postGallery.length) {
+                            $('#postPreload >.blog-post').each(function() {
+                                var item = $(this);
+                                autoshineUI.postGallery.append(item).isotope('appended', item);
+                                setPostSize();
+                            });
+                            
+                            setTimeout(function() {
+                                autoshineUI.postGallery.isotope('layout');
+                            }, 500);
+                        }
+                    } else {
+                        $this.hide();
+                    }
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.error("Blog load more error:", errorThrown);
+                    $loader.hide();
+                    $this.show();
                 }
-                $('.loader-cart-delete').replaceWith('');
-            }
-        });
-    })
-
-    // Header Cart dropdown menu
-    function toggleCart(cart, drop) {
-        $(document).on('click', cart, function() {
-            $(cart).toggleClass('opened');
-        });
-        $(document).on('click', drop, function() {
-            $(cart).toggleClass('opened');
-        });
-        $(document).on('click', function(e) {
-
-            if (!$(e.target).closest(cart).length && !$(e.target).closest(drop).length) {
-
-                if ($(cart).hasClass("opened")) {
-                    $(cart).removeClass('opened');
-                }
-            }
-        })
-    }
-
-    $(document.body).on('added_to_cart', function(a, b, c, d) {
-        if ($('.header-cart').length > 0) {
-            $("html, body").animate({
-                scrollTop: $('.header-cart').offset().top
-            }, 2000);
-        }
-    });
-
-
-
-
-
-
-    // store the slider in a local variable
-    var $window = $(window),
-        flexslider = { vars: {} };
-
-    // tiny helper function to add breakpoints
-    function getGridSize() {
-        var gridSize = (window.innerWidth < 600) ? 2 :
-            (window.innerWidth < 900) ? 3 : 4;
-        flexslider.vars.minItems = gridSize;
-        flexslider.vars.maxItems = gridSize;
-
-    }
-
-    function callflexslider(a) {
-        if ($('.related.products .prd-grid').length && $('.related.products .prd-grid .prd-img').length > a) {
-            $('.related.products .prd-grid').flexslider({
-                animation: "slide",
-                selector: ".slides > div",
-                animationLoop: false,
-                itemWidth: 200,
-                itemMargin: 15,
-                minItems: a,
-                maxItems: a,
-                controlNav: false
             });
-        }
-
-
-        if ($('.up-sells.upsells .prd-grid').length && $('.up-sells.upsells .prd-grid .prd-img').length > a) {
-            $('.up-sells.upsells .prd-grid').flexslider({
-                animation: "slide",
-                selector: ".slides > div",
-                animationLoop: false,
-                itemWidth: 200,
-                itemMargin: 15,
-                minItems: a,
-                maxItems: a,
-                controlNav: false
-            });
-        }
-
-    }
-
-
-    var pageNumber = 1;
-
-    $(document).on("click", '.view-more-post.ajax_load_post_btn.blog-grid', function(e) { // When btn is pressed.
-
-        pageNumber++;
-        var item;
-        var post_per_load = $(this).data('post_per_load');
-        var rdmoreBtn = $(this);
-
-        $('.ajax_load_post_img').show(); // Disable the button, temp.
-        $(rdmoreBtn).hide(); // Disable the button, temp.
-
-        $.ajax({
-            type: "POST",
-            url: ajax_object.ajax_url,
-            data: {
-                action: 'car_repair_services_more_post_ajax',
-                post_per_load: post_per_load,
-                pageNumber: pageNumber,
-                security: ajax_object.ajax_nonce_post,
-            },
-            context: document.body,
-            success: function(data) {
-                $('.ajax_load_post_img').hide();
-                $(rdmoreBtn).show();
-                if (data == '') {
-                    $(rdmoreBtn).hide();
-                }
-                e.preventDefault();
-                var obj = JSON.parse(data)
-                if (obj.count == 'blank') {
-                    $(rdmoreBtn).hide();
-                }
-                $('#postPreload').append(obj.html);
-                if (plugins.postGallery.length) {
-                    $('#postPreload >.blog-post').each(function() {
-                        item = $(this);
-                        var $postgallery = plugins.postGallery;
-                        $postgallery.append(item).isotope('appended', item)
-                        setPostSize();
-                    });
-                    $('.content-gallery .post-carousel').slick({
-                        mobileFirst: false,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        autoplay: false,
-                        arrows: true,
-                        dots: false
-                    });
-                } else {}
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                alert(errorThrown);
-            }
         });
-        return false;
-    });
+    }
+    car_repair_services_blog_load_more();
 
     function setPostSize() {
         var windowW = window.innerWidth || $window.width(),
@@ -1786,7 +1667,7 @@ if (plugins.galleryMoreLink.length) {
         } else if (windowW > 480) {
             itemsInRow = 1;
         }
-        var $postgallery = plugins.postGallery;
+        var $postgallery = autoshineUI.postGallery;
         var containerW = $postgallery.width() - 60,
             galleryW = containerW / itemsInRow;
         $postgallery.find('.blog-post').each(function() {
@@ -1812,30 +1693,69 @@ if (plugins.galleryMoreLink.length) {
         }, 100);
     }
 
-    document.addEventListener('wpcf7submit', function(event) {
-        $('.wpcf7-form button').show();
-        $('.wpcf7-form .ajaxloaderforcf7').replaceWith('')
-    }, false);
-    document.addEventListener('wpcf7spam', function(event) {
-        $('.wpcf7-form button').show();
-        $('.wpcf7-form .ajaxloaderforcf7').replaceWith('')
-    }, false);
-    document.addEventListener('wpcf7mailsent', function(event) {
-        $('.wpcf7-form button').show();
-        $('.wpcf7-form .ajaxloaderforcf7').replaceWith('')
-    }, false);
-    document.addEventListener('wpcf7mailfailed', function(event) {
-        $('.wpcf7-form button').show();
-        $('.wpcf7-form .ajaxloaderforcf7').replaceWith('')
-    }, false);
-    document.addEventListener('wpcf7invalid', function(event) {
+    // ── Form Submission Logic (AJAX) ──
+    $document.ready(function() {
+        // Appointment Form
+        $('#appointment-form-element').on('submit', function(e) {
+            e.preventDefault();
+            var $form = $(this);
+            var $msgContainer = $form.find('.msg-container');
+            var $submitBtn = $form.find('button[type="submit"]');
 
-    }, false);
+            $submitBtn.prop('disabled', true).addClass('loading');
+            $msgContainer.html('<div class="alert alert-info">Sending your request...</div>');
 
-    $('.wpcf7-form button').on('click', function() {
-        $(this).parent().append('<div style="text-align: center;" class="ajaxloaderforcf7"><img src="' + ajax_object.loader_img + '"><div>')
-        $('.wpcf7-form button').hide()
-    })
+            $.ajax({
+                url: 'ajax-schedule-appointment.php',
+                type: 'POST',
+                data: $form.serialize(),
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        $msgContainer.html('<div class="alert alert-success">' + response.message + '</div>');
+                        $form[0].reset();
+                    } else {
+                        $msgContainer.html('<div class="alert alert-danger">' + response.message + '</div>');
+                    }
+                },
+                error: function() {
+                    $msgContainer.html('<div class="alert alert-danger">An error occurred. Please try again.</div>');
+                },
+                complete: function() {
+                    $submitBtn.prop('disabled', false).removeClass('loading');
+                }
+            });
+        });
+
+        // Contact Form
+        $('#contact-form-element').on('submit', function(e) {
+            e.preventDefault();
+            var $form = $(this);
+            var $submitBtn = $form.find('button[type="submit"]');
+            var originalBtnText = $submitBtn.html();
+
+            $submitBtn.prop('disabled', true).html('<span>Sending...</span>');
+
+            $.ajax({
+                url: 'ajax-submit-contact.php',
+                type: 'POST',
+                data: $form.serialize(),
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        $form.html('<div class="alert alert-success" style="padding: 30px; text-align: center;"><h3>Thank You!</h3><p>' + response.message + '</p></div>');
+                    } else {
+                        alert(response.message);
+                        $submitBtn.prop('disabled', false).html(originalBtnText);
+                    }
+                },
+                error: function() {
+                    alert('An error occurred. Please try again.');
+                    $submitBtn.prop('disabled', false).html(originalBtnText);
+                }
+            });
+        });
+    });
 
 
 

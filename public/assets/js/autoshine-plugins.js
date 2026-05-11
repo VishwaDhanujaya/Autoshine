@@ -245,10 +245,9 @@
     };
 
     var crs_galleryHandler = function($scope, $) {
-      
+      if ($.isFunction($.fn.twentytwenty)) {
         $('.js-comparing-img').twentytwenty();
-            
-        
+      }
     };
 
 
