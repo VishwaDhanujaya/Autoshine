@@ -1,15 +1,15 @@
 <?php
 $body_class = "service-page elementor-page";
-$page_title = "Engine Repair Services";
-$page_description = "Expert engine diagnostics, repair, and maintenance for all vehicle makes and models.";
-require_once '../includes/header.php';
+$page_title = "Exhaust System Repair";
+$page_description = "Quality exhaust system and muffler repair services for better fuel efficiency and lower emissions.";
+require_once 'includes/header.php';
 ?>
-<?php require_once '../includes/navbar.php'; ?>
+<?php require_once 'includes/navbar.php'; ?>
 
 <!-- Page Title Bar -->
 <div class="page-title-wrapper" id="pageTitle">
     <div class="container">
-        <h1>Engine Services</h1>
+        <h1>Exhaust System</h1>
         
     </div>
 </div>
@@ -24,7 +24,7 @@ require_once '../includes/header.php';
                 <div class="col-lg-12 col-md-12">
                     <img decoding="async" loading="lazy" alt="Service" class="img-responsive" src="assets/images/services-item-img01.jpg"/>
                     <div class="divider-md"></div>
-                    <h2>Engine Services</h2>
+                    <h2>Exhaust System</h2>
 
                     <div class="service-content">
 
@@ -64,5 +64,5 @@ require_once '../includes/header.php';
 </div><!-- #primary -->
 </div><!-- #pageContent -->
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>
 

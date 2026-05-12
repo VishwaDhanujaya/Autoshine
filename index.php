@@ -1,7 +1,7 @@
 <?php $page_title = "Home";
 $page_description = "Expert auto repair and maintenance services in Sri Lanka. From mechanical repairs to auto detailing, we keep your vehicle in top condition.";
-require_once '../includes/header.php'; ?>
-<?php require_once '../includes/navbar.php'; ?>
+require_once 'includes/header.php'; ?>
+<?php require_once 'includes/navbar.php'; ?>
 
 <div class="content-area" id="pageContent">
 <div class="container-fluid no-gutters" id="primary">
@@ -488,5 +488,5 @@ require_once '../includes/header.php'; ?>
 </div><!-- #primary -->
 </div><!-- #pageContent -->
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>
 

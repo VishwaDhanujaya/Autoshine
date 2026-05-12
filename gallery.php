@@ -2,9 +2,9 @@
 $body_class = "gallery elementor-page";
 $page_title = "Our Gallery";
 $page_description = "Take a look at our workshop and the quality of our vehicle repair, tinkering, and painting work.";
-require_once '../includes/header.php'; 
+require_once 'includes/header.php'; 
 ?>
-<?php require_once '../includes/navbar.php'; ?>
+<?php require_once 'includes/navbar.php'; ?>
 
 
 <!-- Header -->
@@ -124,5 +124,5 @@ require_once '../includes/header.php';
 <!-- Footer -->
 
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>
 

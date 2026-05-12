@@ -1,15 +1,15 @@
 <?php
 $body_class = "service-page elementor-page";
-$page_title = "Tires & Wheels";
-$page_description = "Professional tire replacement, wheel alignment, and balancing services for optimal performance.";
-require_once '../includes/header.php';
+$page_title = "Engine Repair Services";
+$page_description = "Expert engine diagnostics, repair, and maintenance for all vehicle makes and models.";
+require_once 'includes/header.php';
 ?>
-<?php require_once '../includes/navbar.php'; ?>
+<?php require_once 'includes/navbar.php'; ?>
 
 <!-- Page Title Bar -->
 <div class="page-title-wrapper" id="pageTitle">
     <div class="container">
-        <h1>Tires &amp; Wheels</h1>
+        <h1>Engine Services</h1>
         
     </div>
 </div>
@@ -24,7 +24,7 @@ require_once '../includes/header.php';
                 <div class="col-lg-12 col-md-12">
                     <img decoding="async" loading="lazy" alt="Service" class="img-responsive" src="assets/images/services-item-img01.jpg"/>
                     <div class="divider-md"></div>
-                    <h2>Tires &amp; Wheels</h2>
+                    <h2>Engine Services</h2>
 
                     <div class="service-content">
 
@@ -64,5 +64,5 @@ require_once '../includes/header.php';
 </div><!-- #primary -->
 </div><!-- #pageContent -->
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>
 

@@ -1,8 +1,8 @@
 <?php 
 $body_class = "packages elementor-page";
-require_once '../includes/header.php'; 
+require_once 'includes/header.php'; 
 ?>
-<?php require_once '../includes/navbar.php'; ?>
+<?php require_once 'includes/navbar.php'; ?>
 
 
 <!-- Header -->
@@ -148,5 +148,5 @@ require_once '../includes/header.php';
 <!-- Footer -->
 
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>
 

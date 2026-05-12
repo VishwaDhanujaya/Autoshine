@@ -1,15 +1,15 @@
 <?php
 $body_class = "service-page elementor-page";
-$page_title = "Preventative Maintenance";
-$page_description = "Routine car maintenance services to minimize breakdowns and extend the life of your vehicle.";
-require_once '../includes/header.php';
+$page_title = "Tires & Wheels";
+$page_description = "Professional tire replacement, wheel alignment, and balancing services for optimal performance.";
+require_once 'includes/header.php';
 ?>
-<?php require_once '../includes/navbar.php'; ?>
+<?php require_once 'includes/navbar.php'; ?>
 
 <!-- Page Title Bar -->
 <div class="page-title-wrapper" id="pageTitle">
     <div class="container">
-        <h1>Preventative Maintenance</h1>
+        <h1>Tires &amp; Wheels</h1>
         
     </div>
 </div>
@@ -24,13 +24,13 @@ require_once '../includes/header.php';
                 <div class="col-lg-12 col-md-12">
                     <img decoding="async" loading="lazy" alt="Service" class="img-responsive" src="assets/images/services-item-img01.jpg"/>
                     <div class="divider-md"></div>
-                    <h2>Preventative Maintenance</h2>
+                    <h2>Tires &amp; Wheels</h2>
 
                     <div class="service-content">
 
 <p>An oil change can really change your mood. And it will definitely change your oil. One of the simplest, most effective and inexpensive ways to help protect the life of your car, especially its engine, is to change the oil and the oil filter regularly.</p>
-<p>Oil is the lifeblood of your engine. It reduces friction, lessens wear, provides lubrication, forms a seal between the pistons, rings and cylinder walls while helping to cool engine parts. Without the cleaning action of new oil, carbon and varnish buildup would be toxic to the engine. And engine oil even dampens the shock and noise of moving parts.</p>
-<p>With a Car Repair Service oil change, or any other service, you'll receive a Touch® Courtesy Check. We'll look inside, outside, under the hood and underneath the car, then explain the findings and give you a written report.</p>
+<p>Oil is the lifeblood of your engine. It reduces friction, lessens wear, provides lubrication, forms a seal between the pistons, rings and cylinder walls while helping to cool engine parts.</p>
+<p>With a Car Repair Service oil change, or any other service, you'll receive a Touch® Courtesy Check. We'll look inside, outside, under the hood and underneath the car.</p>
 <ul class="marker-list-sm">
     <li>Engine air filter</li>
     <li>Brake fluid</li>
@@ -38,7 +38,6 @@ require_once '../includes/header.php';
     <li>Automatic transmission fluid</li>
     <li>Coolant/antifreeze</li>
 </ul>
-<p>Oil change near me? The next time you ask this question, just look for your neighborhood Car Repair Service.</p>
 
                     </div>
 
@@ -65,5 +64,5 @@ require_once '../includes/header.php';
 </div><!-- #primary -->
 </div><!-- #pageContent -->
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>
 

@@ -1,5 +1,5 @@
 <?php
-require_once '../includes/security.php';
+require_once 'includes/security.php';
 
 $body_class = "contacts elementor-page";
 $page_title = "Contact Us";
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['your-name'])) {
         $status_message = "Invalid email format.";
         $status_type = "error";
     } else {
-        require_once '../includes/mail-config.php';
+        require_once 'includes/mail-config.php';
         
         try {
             $mail = getPHPMailerInstance();
@@ -51,9 +51,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['your-name'])) {
     }
 }
 
-require_once '../includes/header.php';
+require_once 'includes/header.php';
 ?>
-<?php require_once '../includes/navbar.php'; ?>
+<?php require_once 'includes/navbar.php'; ?>
 
 <!-- Page Title -->
 <div class="page-title-wrapper" id="pageTitle">
@@ -157,5 +157,5 @@ require_once '../includes/header.php';
 </div><!-- #primary -->
 </div><!-- #pageContent -->
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>
 

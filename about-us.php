@@ -2,9 +2,9 @@
 $body_class = "about-us elementor-page";
 $page_title = "About Us";
 $page_description = "Learn about Autoshine's 25-year reputation for quality auto repair and our mission to provide the best vehicle maintenance services in Sri Lanka.";
-require_once '../includes/header.php';
+require_once 'includes/header.php';
 ?>
-<?php require_once '../includes/navbar.php'; ?>
+<?php require_once 'includes/navbar.php'; ?>
 
 <!-- Page Title -->
 <div class="page-title-wrapper" id="pageTitle">
@@ -242,5 +242,5 @@ require_once '../includes/header.php';
 </div><!-- #primary -->
 </div><!-- #pageContent -->
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>
 

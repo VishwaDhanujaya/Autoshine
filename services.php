@@ -2,9 +2,9 @@
 $body_class = "services elementor-page";
 $page_title = "Our Services";
 $page_description = "Comprehensive vehicle repair services including mechanical, electrical, auto detailing, and specialized body modifications.";
-require_once '../includes/header.php'; 
+require_once 'includes/header.php'; 
 ?>
-<?php require_once '../includes/navbar.php'; ?>
+<?php require_once 'includes/navbar.php'; ?>
 
 
 <!-- Header -->
@@ -405,5 +405,5 @@ require_once '../includes/header.php';
 <!-- Footer -->
 
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>
 
