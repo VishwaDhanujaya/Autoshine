@@ -29,7 +29,7 @@ require_once '../includes/header.php'; ?>
                         <h4 data-animation="zoomIn" data-animation-delay="0.5s">Full Service of</h4>
                         <h3 data-animation="scaleOut" data-animation-delay="0.2">Auto Repair</h3>
                         <h3 data-animation="" data-animation-delay="">&amp; Maintenance</h3>
-                        <p data-animation="fadeIn" data-animation-delay="0.9s">Over 35 Years Of Quality Auto Service</p>
+                        <p data-animation="fadeIn" data-animation-delay="0.9s">Over 25 Years Of Quality Auto Service</p>
                     </div></div></div>
                 </div>
             </div>
@@ -250,7 +250,7 @@ require_once '../includes/header.php'; ?>
         <div class="container">
             <div class="block-title">
                 <h2 class="block-title__title">Why Choose Certified Service?</h2>
-                <div class="block-title__description">We partnered with RepairPal to bring you the most sophisticated fair-price estimates</div>
+                <div class="block-title__description">We provide professional auto repair &amp; maintenance with certified expertise</div>
                 <div class="title-separator"></div>
             </div>
             <div class="text-icon-wrapper">
@@ -273,7 +273,7 @@ require_once '../includes/header.php'; ?>
                         <div class="text-icon">
                             <div class="icon-wrapper"><span><i class="icon icon-612844"></i><span class="icon-hover"></span></span></div>
                             <h3 class="title">Guarantees</h3>
-                            <p class="text">Covers parts and labor on qualifying repairs and services for 24 months/24,000 miles</p>
+                            <p class="text">Covers parts and labor on qualifying repairs and services for 24 months/40,000 km</p>
                         </div>
                     </div>
                 </div>
@@ -367,7 +367,7 @@ require_once '../includes/header.php'; ?>
                     <div class="row stat-box02-wrapper">
                         <div class="col-sm-6">
                             <div class="stat-box02">
-                                <div class="stat-box02__value"><span class="number"><span class="count" data-speed="1000" data-to="20">20</span></span></div>
+                                <div class="stat-box02__value"><span class="number"><span class="count" data-speed="1000" data-to="25">25</span></span></div>
                                 <div class="stat-box02__title"><h5>Years of experience</h5></div>
                             </div>
                         </div>
@@ -396,7 +396,7 @@ require_once '../includes/header.php'; ?>
 
                 <div class="col-lg-6">
                     <div class="video-block">
-                        <a class="video-block__icon" href="#">
+                        <a class="video-block__icon anchoring-link" href="#appointment-cta">
                             <span class="icon">
                                 <svg id="Capa_1" style="enable-background:new 0 0 191.255 191.255;" version="1.1" viewbox="0 0 191.255 191.255" x="0px" xml:space="preserve" y="0px">
                                     <path d="M162.929,66.612c-2.814-1.754-6.514-0.896-8.267,1.917s-0.895,6.513,1.917,8.266c6.544,4.081,10.45,11.121,10.45,18.833s-3.906,14.752-10.45,18.833l-98.417,61.365c-6.943,4.329-15.359,4.542-22.512,0.573c-7.154-3.97-11.425-11.225-11.425-19.406V34.262c0-8.181,4.271-15.436,11.425-19.406c7.153-3.969,15.569-3.756,22.512,0.573l57.292,35.723c2.813,1.752,6.513,0.895,8.267-1.917c1.753-2.812,0.895-6.513-1.917-8.266L64.512,5.247c-10.696-6.669-23.661-7-34.685-0.883C18.806,10.48,12.226,21.657,12.226,34.262v122.73c0,12.605,6.58,23.782,17.602,29.898c5.25,2.913,10.939,4.364,16.616,4.364c6.241,0,12.467-1.754,18.068-5.247l98.417-61.365c10.082-6.287,16.101-17.133,16.101-29.015S173.011,72.899,162.929,66.612z"></path>

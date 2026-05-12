@@ -1,7 +1,7 @@
 <?php
 $body_class = "about-us elementor-page";
 $page_title = "About Us";
-$page_description = "Learn about Autoshine's 25-year reputation for quality auto repair and our mission to provide the best vehicle maintenance services.";
+$page_description = "Learn about Autoshine's 25-year reputation for quality auto repair and our mission to provide the best vehicle maintenance services in Sri Lanka.";
 require_once '../includes/header.php';
 ?>
 <?php require_once '../includes/navbar.php'; ?>
@@ -33,7 +33,7 @@ require_once '../includes/header.php';
                         <div class="title-separator"></div>
                     </div>
                     <p>The family has been involved in general automotive repair for over two decades, and the business continues to grow.</p>
-                    <p>Car Repair Service is a family owned and operated auto repair service in USA serving our local community and surrounding areas for 24 years. Our ASE certified technicians are ready to deal with any car repair needed or vehicle issues you may be experiencing. Adam Smith, Owner, inherited the shop from his father.</p>
+                    <p>Autoshine is a family owned and operated auto repair service in Sri Lanka serving our local community and surrounding areas for 25 years. Our certified technicians are ready to deal with any car repair needed or vehicle issues you may be experiencing. We have inherited a legacy of excellence and continue to provide quality service to all our clients.</p>
                 </div>
             </div>
             <div class="divider-md"></div>
@@ -103,7 +103,7 @@ require_once '../includes/header.php';
 </section>
 
 <!-- Team Carousel (hidden until real photos are available) -->
-<section id="team" class="reveal-effect">
+<section id="team" class="reveal-effect" style="display: none;">
     <div class="block position-relative overflow-hidden">
         <div class="container">
             <div class="block-title">

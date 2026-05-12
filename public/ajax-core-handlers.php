@@ -1,10 +1,5 @@
 <?php
 // AJAX Form Handler
-
-// Basic security check
-// In a real application, you'd use nonces here
-// $security = isset($_POST['security']) ? $_POST['security'] : '';
-
 $action = isset($_POST['action']) ? $_POST['action'] : '';
 
 switch ($action) {

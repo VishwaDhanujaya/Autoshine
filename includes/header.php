@@ -1,6 +1,15 @@
 <?php 
 require_once __DIR__ . '/security.php'; 
 $csrf_token = generateCsrfToken();
+
+// Production error reporting
+if (($_ENV['APP_ENV'] ?? 'production') === 'production') {
+    error_reporting(0);
+    ini_set('display_errors', 0);
+} else {
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en-GB">

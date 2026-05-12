@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->send();
         echo json_encode(['status' => 'success', 'message' => 'Appointment request sent successfully!']);
     } catch (Exception $e) {
-        echo json_encode(['status' => 'error', 'message' => 'Upload failed. Please check your file type/size and try again.']);
+        echo json_encode(['status' => 'error', 'message' => 'Request could not be sent. Please try again later.']);
     }
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Invalid request method.']);

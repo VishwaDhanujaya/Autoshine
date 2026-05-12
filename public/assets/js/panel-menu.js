@@ -21,7 +21,6 @@ $.fn.initMM = function() {
 		init: function($button, data){
 			var _this = this;
 			if(!_this.$mobilemenu.length){
-				console.log('You not have <nav class="panel-menu">menu</nav>. See Documentation')
 				return false;
 			}
 

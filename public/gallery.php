@@ -104,7 +104,7 @@ require_once '../includes/header.php';
 </div> <div id="galleryPreload"></div>
 <div class="more-loader" id="gallerymoreLoader"><img loading="lazy" alt="img" decoding="async" src="assets/images/ajax-loader_1.gif"/></div>
 <div class="text-center">
-<a class="btn btn-border btn-wide btn-invert btn-top view-more-gallery" data-load="gallery-more-ajax.html"><span>More Photos</span></a>
+<a class="btn btn-border btn-wide btn-invert btn-top view-more-gallery" data-load="ajax-gallery-load"><span>More Photos</span></a>
 </div>
 </div></div> </div>
 </div>

@@ -2,12 +2,10 @@
     "use strict";
 
     $(document).ready(function() {
-        console.log('Print fix script loaded');
 
         // Main button click handler
         $(document).on('click', '.print-ele-link', function(e) {
             e.preventDefault();
-            console.log('Print button clicked');
             
             var $promo = $(this).closest('.promo01');
             if ($promo.length) {
@@ -17,14 +15,11 @@
                 $modal.find('.modal-body').html(htm);
                 $modal.find('.modal-body .print-ele-link').remove();
                 $modal.modal('show');
-            } else {
-                console.error('Promo container not found');
             }
         });
 
         // Modal print button click handler
         $(document).on('click', '#btn_save_and_close_for_ele', function() {
-            console.log('Modal print button clicked');
             
             var htm = $('#couponForm .modal-body').html();
             if (htm) {
