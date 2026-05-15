@@ -98,7 +98,7 @@ require_once 'includes/header.php'; ?>
                 </div>
 
                 <div class="service hidden-xs">
-                    <a class="image image-scale" href="service-preventative-maintenance.php">
+                    <a class="image image-scale" href="service/preventative-maintenance">
                         <img loading="lazy" alt="Car Maintenance Workshop" decoding="async" src="assets/images/service-2-bg.jpg"/>
                     </a>
                 </div>
@@ -115,7 +115,7 @@ require_once 'includes/header.php'; ?>
                 </div>
 
                 <div class="service hidden-xs">
-                    <a class="image image-scale" href="service-brake-repair.php">
+                    <a class="image image-scale" href="service/brake-repair">
                         <img loading="lazy" alt="Brake Repair Service" decoding="async" src="assets/images/service-6-bg.jpg"/>
                     </a>
                 </div>
@@ -132,7 +132,7 @@ require_once 'includes/header.php'; ?>
                 </div>
 
                 <div class="service hidden-xs">
-                    <a class="image image-scale" href="service-transmission.php">
+                    <a class="image image-scale" href="service/transmission">
                         <img loading="lazy" alt="Transmission Repair" decoding="async" src="assets/images/service-6-bg_1.jpg"/>
                     </a>
                 </div>

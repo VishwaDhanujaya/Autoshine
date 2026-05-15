@@ -55,12 +55,12 @@
 <div id="searchOverlay" class="search-overlay">
     <button class="search-close" id="searchClose">&times;</button>
     <div class="search-overlay-content">
-        <form action="search.php" method="GET" class="search-form">
+        <form action="search" method="GET" class="search-form">
             <input type="text" name="q" placeholder="What are you looking for?" id="searchInput" autocomplete="off">
             <button type="submit" class="search-submit"><i class="icon icon-search"></i></button>
         </form>
         <div class="search-suggestions">
-            <p>Try searching for: <a href="search.php?q=Detailing">Detailing</a>, <a href="search.php?q=Brakes">Brakes</a>, <a href="search.php?q=Hybrid">Hybrid</a></p>
+            <p>Try searching for: <a href="search?q=Detailing">Detailing</a>, <a href="search?q=Brakes">Brakes</a>, <a href="search?q=Hybrid">Hybrid</a></p>
         </div>
     </div>
 </div>

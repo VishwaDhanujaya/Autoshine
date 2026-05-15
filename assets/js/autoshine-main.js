@@ -66,18 +66,6 @@
                     jQuery('.close-menu').click();
             })
         }
-        var windowWidth = window.innerWidth || $window.width();
-        if (windowWidth < 1025) {
-            $(".search-form button[type='submit']").on("click", function(e) {
-                e.preventDefault()
-                if ($('.search-form .search-field').is(':visible') && $('.search-form .search-field').val() != '') {
-                    $('.search-form').submit();
-                } else {
-                    $('.search-form .search-field').show();
-                }
-                return false
-            });
-        }
 
         // view all brands
         $('.js-view-all-brands').on('click', function(e) {

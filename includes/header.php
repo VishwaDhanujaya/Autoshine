@@ -22,10 +22,13 @@ if (($_ENV['APP_ENV'] ?? 'production') === 'production') {
     // Dynamically determine the base URL to ensure assets load correctly on all pages (including 404)
     $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? "https" : "http";
     $host = $_SERVER['HTTP_HOST'];
-    // For local XAMPP, this usually includes the subfolder (e.g., /autoshine.lk/public/)
-    $current_script = $_SERVER['SCRIPT_NAME'];
-    $base_dir = preg_replace('/[^\/]+\.php$/', '', $current_script);
+    // Standardize base URL detection for both local (subfolder) and server (root)
+    $script_path = str_replace('\\', '/', $_SERVER['SCRIPT_NAME']);
+    $base_dir = str_replace(basename($script_path), '', $script_path);
     $base_url = $protocol . "://" . $host . $base_dir;
+    
+    // Ensure base_url ends with a slash
+    $base_url = rtrim($base_url, '/') . '/';
     ?>
     <base href="<?php echo $base_url; ?>">
 

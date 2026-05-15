@@ -50,7 +50,7 @@
             <div class="header-row-unified">
                 <!-- Logo -->
                 <div class="logo">
-                    <a href="index.php">
+                    <a href="./">
                         <img alt="Logo" src="assets/images/Auto-Shine-logo.png" class="logo-main"/>
                     </a>
                 </div>
@@ -59,12 +59,12 @@
                 <div id="slidemenu">
                     <div class="main-menu-wrapper hidden-xs hidden-sm">
                         <ul class="nav navbar-nav">
-                            <li class="<?php echo ($current_page == 'index.php' || $current_page === '') ? 'current-menu-item' : ''; ?>"><a href="index.php">Home</a></li>
-                            <li class="<?php echo ($current_page == 'about-us.php') ? 'current-menu-item' : ''; ?>"><a href="about-us.php">About Us</a></li>
-                            <li class="<?php echo ($current_page == 'services.php' || strpos($current_page, 'service-') === 0) ? 'current-menu-item' : ''; ?>"><a href="services.php">Services</a></li>
-                            <li class="<?php echo ($current_page == 'gallery.php') ? 'current-menu-item' : ''; ?>"><a href="gallery.php">Gallery</a></li>
-                            <li class="<?php echo ($current_page == 'pricing-packages.php') ? 'current-menu-item' : ''; ?>"><a href="pricing-packages.php">Packages</a></li>
-                            <li class="<?php echo ($current_page == 'contact-us.php') ? 'current-menu-item' : ''; ?>"><a href="contact-us.php">Contact Us</a></li>
+                            <li class="<?php echo ($current_page == 'index.php' || $current_page === '') ? 'current-menu-item' : ''; ?>"><a href="./">Home</a></li>
+                            <li class="<?php echo ($current_page == 'about-us.php') ? 'current-menu-item' : ''; ?>"><a href="about-us">About Us</a></li>
+                            <li class="<?php echo ($current_page == 'services.php' || strpos($current_page, 'service-') === 0) ? 'current-menu-item' : ''; ?>"><a href="services">Services</a></li>
+                            <li class="<?php echo ($current_page == 'gallery.php') ? 'current-menu-item' : ''; ?>"><a href="gallery">Gallery</a></li>
+                            <li class="<?php echo ($current_page == 'pricing-packages.php') ? 'current-menu-item' : ''; ?>"><a href="pricing-packages">Packages</a></li>
+                            <li class="<?php echo ($current_page == 'contact-us.php') ? 'current-menu-item' : ''; ?>"><a href="contact-us">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>

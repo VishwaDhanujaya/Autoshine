@@ -43,12 +43,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-preventative-maintenance.php">
+<a class="image-scale-color" href="service/preventative-maintenance">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" fetchpriority="high" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-01-357x242.jpg" srcset="assets/images/services-img-01-357x242.jpg 357w, assets/images/services-img-01-300x204.jpg 300w, assets/images/services-img-01.jpg 370w" width="357"> </img></a>
 <i class="icon icon-oil"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-preventative-maintenance.php">Preventative Maintenance</a></h3>
+<h3 class="title"><a href="service/preventative-maintenance">Preventative Maintenance</a></h3>
 <div class="text">
                                                 The best way to minimize breakdowns is doing routine maintenance                                                </div>
 </div>
@@ -57,12 +57,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-brake-repair.php">
+<a class="image-scale-color" href="service/brake-repair">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-02-357x242.jpg" srcset="assets/images/services-img-02-357x242.jpg 357w, assets/images/services-img-02-300x204.jpg 300w, assets/images/services-img-02.jpg 370w" width="357"> </img></a>
 <i class="icon icon-disc-brake"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-brake-repair.php">Brake Repair &amp; Services</a></h3>
+<h3 class="title"><a href="service/brake-repair">Brake Repair &amp; Services</a></h3>
 <div class="text">
                                                 Brakes wear out over time requiring service                                                </div>
 </div>
@@ -71,12 +71,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-transmission.php">
+<a class="image-scale-color" href="service/transmission">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-03-357x242.jpg" srcset="assets/images/services-img-03-357x242.jpg 357w, assets/images/services-img-03-300x204.jpg 300w, assets/images/services-img-03.jpg 370w" width="357"/> </a>
 <i class="icon icon-gearshift"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-transmission.php">Transmission  Service &amp; Repair</a></h3>
+<h3 class="title"><a href="service/transmission">Transmission  Service &amp; Repair</a></h3>
 <div class="text">
                                                 The transmission is complicated and important components of your car                                                </div>
 </div>
@@ -85,12 +85,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-engine.php">
+<a class="image-scale-color" href="service/engine">
 <img alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" loading="lazy" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-05-357x242.jpg" srcset="assets/images/services-img-05-357x242.jpg 357w, assets/images/services-img-05-300x204.jpg 300w, assets/images/services-img-05.jpg 370w" width="357"/> </a>
 <i class="icon icon-engine"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-engine.php">Engine Services</a></h3>
+<h3 class="title"><a href="service/engine">Engine Services</a></h3>
 <div class="text">
                                                 Brakes wear out over time requiring service                                                </div>
 </div>
@@ -99,12 +99,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-tires-wheels.php">
+<a class="image-scale-color" href="service/tires-wheels">
 <img alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" loading="lazy" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-04-357x242.jpg" srcset="assets/images/services-img-04-357x242.jpg 357w, assets/images/services-img-04-300x204.jpg 300w, assets/images/services-img-04.jpg 370w" width="357"/> </a>
 <i class="icon icon-car-wheel"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-tires-wheels.php">Tires &amp; Wheels</a></h3>
+<h3 class="title"><a href="service/tires-wheels">Tires &amp; Wheels</a></h3>
 <div class="text">
                                                 The best way to minimize breakdowns is doing routine maintenance                                                </div>
 </div>
@@ -113,12 +113,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-preventative-maintenance.php">
+<a class="image-scale-color" href="service/preventative-maintenance">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" fetchpriority="high" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-01-357x242_1.jpg" srcset="assets/images/services-img-01-357x242.jpg 357w, assets/images/services-img-01-300x204.jpg 300w, assets/images/services-img-01.jpg 370w" width="357"/> </a>
 <i class="icon icon-oil"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-preventative-maintenance.php">Preventative Maintenance</a></h3>
+<h3 class="title"><a href="service/preventative-maintenance">Preventative Maintenance</a></h3>
 <div class="text">
                                                 The best way to minimize breakdowns is doing routine maintenance                                                </div>
 </div>
@@ -127,12 +127,12 @@ require_once 'includes/header.php';
 </div><div class="row services-alt tab-pane fade in" id="services2"> <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-brake-repair.php">
+<a class="image-scale-color" href="service/brake-repair">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-02-357x242_1.jpg" srcset="assets/images/services-img-02-357x242.jpg 357w, assets/images/services-img-02-300x204.jpg 300w, assets/images/services-img-02.jpg 370w" width="357"/> </a>
 <i class="icon icon-disc-brake"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-brake-repair.php">Brake Repair &amp; Services</a></h3>
+<h3 class="title"><a href="service/brake-repair">Brake Repair &amp; Services</a></h3>
 <div class="text">
                                                 Brakes wear out over time requiring service                                                </div>
 </div>
@@ -141,12 +141,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-transmission.php">
+<a class="image-scale-color" href="service/transmission">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-03-357x242_1.jpg" srcset="assets/images/services-img-03-357x242.jpg 357w, assets/images/services-img-03-300x204.jpg 300w, assets/images/services-img-03.jpg 370w" width="357"/> </a>
 <i class="icon icon-gearshift"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-transmission.php">Transmission Service &amp; Repair</a></h3>
+<h3 class="title"><a href="service/transmission">Transmission Service &amp; Repair</a></h3>
 <div class="text">
                                                 The transmission is complicated and important components of your car                                                </div>
 </div>
@@ -155,12 +155,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-engine.php">
+<a class="image-scale-color" href="service/engine">
 <img alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" loading="lazy" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-05-357x242_1.jpg" srcset="assets/images/services-img-05-357x242.jpg 357w, assets/images/services-img-05-300x204.jpg 300w, assets/images/services-img-05.jpg 370w" width="357"/> </a>
 <i class="icon icon-engine"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-engine.php">Engine Services</a></h3>
+<h3 class="title"><a href="service/engine">Engine Services</a></h3>
 <div class="text">
                                                 Brakes wear out over time requiring service                                                </div>
 </div>
@@ -169,12 +169,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-exhaust-system.php">
+<a class="image-scale-color" href="service/exhaust-system">
 <img alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" loading="lazy" src="assets/images/services-img-06-357x242.jpg" width="357"/> </a>
 <i class="icon icon-exhaust-pipe"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-exhaust-system.php">Exhaust System</a></h3>
+<h3 class="title"><a href="service/exhaust-system">Exhaust System</a></h3>
 <div class="text">
                                                 The transmission is complicated and important component of your car                                                </div>
 </div>
@@ -183,12 +183,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-tires-wheels.php">
+<a class="image-scale-color" href="service/tires-wheels">
 <img alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" loading="lazy" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-04-357x242_1.jpg" srcset="assets/images/services-img-04-357x242.jpg 357w, assets/images/services-img-04-300x204.jpg 300w, assets/images/services-img-04.jpg 370w" width="357"/> </a>
 <i class="icon icon-car-wheel"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-tires-wheels.php">Tires &amp; Wheels</a></h3>
+<h3 class="title"><a href="service/tires-wheels">Tires &amp; Wheels</a></h3>
 <div class="text">
                                                 The best way to minimize breakdowns is doing routine maintenance                                                </div>
 </div>
@@ -210,12 +210,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-preventative-maintenance.php">
+<a class="image-scale-color" href="service/preventative-maintenance">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" fetchpriority="high" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-01-357x242_2.jpg" srcset="assets/images/services-img-01-357x242.jpg 357w, assets/images/services-img-01-300x204.jpg 300w, assets/images/services-img-01.jpg 370w" width="357"/> </a>
 <i class="icon icon-oil"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-preventative-maintenance.php">Preventative Maintenance</a></h3>
+<h3 class="title"><a href="service/preventative-maintenance">Preventative Maintenance</a></h3>
 <div class="text">
                                                 The best way to minimize breakdowns is doing routine maintenance                                                </div>
 </div>
@@ -224,12 +224,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-brake-repair.php">
+<a class="image-scale-color" href="service/brake-repair">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-02-357x242_2.jpg" srcset="assets/images/services-img-02-357x242.jpg 357w, assets/images/services-img-02-300x204.jpg 300w, assets/images/services-img-02.jpg 370w" width="357"/> </a>
 <i class="icon icon-disc-brake"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-brake-repair.php">Brake Repair &amp; Services</a></h3>
+<h3 class="title"><a href="service/brake-repair">Brake Repair &amp; Services</a></h3>
 <div class="text">
                                                 Brakes wear out over time requiring service                                                </div>
 </div>
@@ -238,12 +238,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-transmission.php">
+<a class="image-scale-color" href="service/transmission">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-03-357x242_2.jpg" srcset="assets/images/services-img-03-357x242.jpg 357w, assets/images/services-img-03-300x204.jpg 300w, assets/images/services-img-03.jpg 370w" width="357"/> </a>
 <i class="icon icon-gearshift"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-transmission.php">Transmission  Service &amp; Repair</a></h3>
+<h3 class="title"><a href="service/transmission">Transmission  Service &amp; Repair</a></h3>
 <div class="text">
                                                 The transmission is complicated and important components of your car                                                </div>
 </div>
@@ -252,12 +252,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-engine.php">
+<a class="image-scale-color" href="service/engine">
 <img alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" loading="lazy" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-05-357x242_2.jpg" srcset="assets/images/services-img-05-357x242.jpg 357w, assets/images/services-img-05-300x204.jpg 300w, assets/images/services-img-05.jpg 370w" width="357"/> </a>
 <i class="icon icon-engine"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-engine.php">Engine Services</a></h3>
+<h3 class="title"><a href="service/engine">Engine Services</a></h3>
 <div class="text">
                                                 Brakes wear out over time requiring service                                                </div>
 </div>
@@ -266,12 +266,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-tires-wheels.php">
+<a class="image-scale-color" href="service/tires-wheels">
 <img alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" loading="lazy" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-04-357x242_2.jpg" srcset="assets/images/services-img-04-357x242.jpg 357w, assets/images/services-img-04-300x204.jpg 300w, assets/images/services-img-04.jpg 370w" width="357"/> </a>
 <i class="icon icon-car-wheel"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-tires-wheels.php">Tires &amp; Wheels</a></h3>
+<h3 class="title"><a href="service/tires-wheels">Tires &amp; Wheels</a></h3>
 <div class="text">
                                                 The best way to minimize breakdowns is doing routine maintenance                                                </div>
 </div>
@@ -280,12 +280,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-preventative-maintenance.php">
+<a class="image-scale-color" href="service/preventative-maintenance">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" fetchpriority="high" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-01-357x242_3.jpg" srcset="assets/images/services-img-01-357x242.jpg 357w, assets/images/services-img-01-300x204.jpg 300w, assets/images/services-img-01.jpg 370w" width="357"/> </a>
 <i class="icon icon-oil"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-preventative-maintenance.php">Preventative Maintenance</a></h3>
+<h3 class="title"><a href="service/preventative-maintenance">Preventative Maintenance</a></h3>
 <div class="text">
                                                 The best way to minimize breakdowns is doing routine maintenance                                                </div>
 </div>
@@ -294,12 +294,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-brake-repair.php">
+<a class="image-scale-color" href="service/brake-repair">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-02-357x242_3.jpg" srcset="assets/images/services-img-02-357x242.jpg 357w, assets/images/services-img-02-300x204.jpg 300w, assets/images/services-img-02.jpg 370w" width="357"/> </a>
 <i class="icon icon-disc-brake"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-brake-repair.php">Brake Repair &amp; Services</a></h3>
+<h3 class="title"><a href="service/brake-repair">Brake Repair &amp; Services</a></h3>
 <div class="text">
                                                 Brakes wear out over time requiring service                                                </div>
 </div>
@@ -308,12 +308,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-transmission.php">
+<a class="image-scale-color" href="service/transmission">
 <img loading="lazy" alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-03-357x242_3.jpg" srcset="assets/images/services-img-03-357x242.jpg 357w, assets/images/services-img-03-300x204.jpg 300w, assets/images/services-img-03.jpg 370w" width="357"/> </a>
 <i class="icon icon-gearshift"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-transmission.php">Transmission Service &amp; Repair</a></h3>
+<h3 class="title"><a href="service/transmission">Transmission Service &amp; Repair</a></h3>
 <div class="text">
                                                 The transmission is complicated and important components of your car                                                </div>
 </div>
@@ -322,12 +322,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-engine.php">
+<a class="image-scale-color" href="service/engine">
 <img alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" loading="lazy" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-05-357x242_3.jpg" srcset="assets/images/services-img-05-357x242.jpg 357w, assets/images/services-img-05-300x204.jpg 300w, assets/images/services-img-05.jpg 370w" width="357"/> </a>
 <i class="icon icon-engine"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-engine.php">Engine Services</a></h3>
+<h3 class="title"><a href="service/engine">Engine Services</a></h3>
 <div class="text">
                                                 Brakes wear out over time requiring service                                                </div>
 </div>
@@ -336,12 +336,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-exhaust-system.php">
+<a class="image-scale-color" href="service/exhaust-system">
 <img alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" loading="lazy" src="assets/images/services-img-06-357x242_1.jpg" width="357"/> </a>
 <i class="icon icon-exhaust-pipe"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-exhaust-system.php">Exhaust System</a></h3>
+<h3 class="title"><a href="service/exhaust-system">Exhaust System</a></h3>
 <div class="text">
                                                 The transmission is complicated and important component of your car                                                </div>
 </div>
@@ -350,12 +350,12 @@ require_once 'includes/header.php';
 <div class="col-xs-6 col-sm-6 col-md-4">
 <div class="services-block-alt">
 <div class="image">
-<a class="image-scale-color" href="service-tires-wheels.php">
+<a class="image-scale-color" href="service/tires-wheels">
 <img alt="" class="attachment-car-repair-services-thumbnail size-car-repair-services-thumbnail wp-post-image" decoding="async" height="242" loading="lazy" sizes="(max-width: 357px) 100vw, 357px" src="assets/images/services-img-04-357x242_3.jpg" srcset="assets/images/services-img-04-357x242.jpg 357w, assets/images/services-img-04-300x204.jpg 300w, assets/images/services-img-04.jpg 370w" width="357"/> </a>
 <i class="icon icon-car-wheel"></i>
 </div>
 <div class="caption">
-<h3 class="title"><a href="service-tires-wheels.php">Tires &amp; Wheels</a></h3>
+<h3 class="title"><a href="service/tires-wheels">Tires &amp; Wheels</a></h3>
 <div class="text">
                                                 The best way to minimize breakdowns is doing routine maintenance                                                </div>
 </div>

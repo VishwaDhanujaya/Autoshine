@@ -1,12 +1,28 @@
 # 1. SECURITY: Prevent directory browsing
 Options -Indexes
 
-# 2. SECURITY: Protect sensitive folders
+# 2. ROUTING: Pretty URLs
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
     # Block access to includes, vendor, and sensitive files
     RewriteRule ^(includes|vendor|composer\.(json|lock)|\.env|\.git)($|/) - [F,L,NC]
+
+    # Remove .php extension from URL (Redirect)
+    # Don't redirect if it's a directory or if the request is already pretty
+    RewriteCond %{THE_REQUEST} \s/+(.*?)\.php[\s?] [NC]
+    RewriteRule ^ /%1 [R=301,L,NE]
+
+    # Map /service/[name] to service-[name].php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^service/([^/]+)/?$ service-$1.php [L,QSA]
+
+    # Internally rewrite pretty URL to .php file
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^(.+)$ $1.php [L]
 </IfModule>
 
 # 3. PERFORMANCE: Browser Caching (Leverage Browser Caching)
